@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Thu, 13 Aug 2015 15:12:24 -0400
+Source: glance
+Binary: python-glance glance python-glance-doc glance-common glance-api glance-registry
+Architecture: all
+Version: 1:2015.1.1-0ubuntu2~cloud2
+Distribution: trusty
+Urgency: medium
+Maintainer: Corey Bryant <corey.bryant@canonical.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description: 
+ glance     - OpenStack Image Registry and Delivery Service - Daemons
+ glance-api - OpenStack Image Registry and Delivery Service - API
+ glance-common - OpenStack Image Registry and Delivery Service - Common
+ glance-registry - OpenStack Image Registry and Delivery Service - Registry
+ python-glance - OpenStack Image Registry and Delivery Service - Python library
+ python-glance-doc - OpenStack Image Registry and Delivery Service - Documentation
+Changes: 
+ glance (1:2015.1.1-0ubuntu2~cloud2) trusty-kilo; urgency=medium
+ .
+   * d/rules: Prevent dh_python2 from guessing dependencies.
+Checksums-Sha1: 
+ 57692cde4e10f9fe1b1df04ee0bc27cab6a0ddf5 439934 python-glance_2015.1.1-0ubuntu2~cloud2_all.deb
+ b0ae55f281134d4d079be6a68ad2e2d82bf756a6 1742 glance_2015.1.1-0ubuntu2~cloud2_all.deb
+ fbf9bcb4e85860615cbc44b9880c2324af681be7 641786 python-glance-doc_2015.1.1-0ubuntu2~cloud2_all.deb
+ a4f38f71cd02bffa3faec380e5ef97ea97aac19e 7092 glance-common_2015.1.1-0ubuntu2~cloud2_all.deb
+ 68ca516c879c9bfbd89c3059f1d06a078a7cf46f 26958 glance-api_2015.1.1-0ubuntu2~cloud2_all.deb
+ 5e1e55e43bce5b4fa623738d38a7e28d87e3acf3 9834 glance-registry_2015.1.1-0ubuntu2~cloud2_all.deb
+Checksums-Sha256: 
+ 5ebb29fea475b1c297d6061e95c0b9b8bff07b1cac91a3703dc189bf6cdb3664 439934 python-glance_2015.1.1-0ubuntu2~cloud2_all.deb
+ cca2184a2b3e41a9fc5823ffebf7ac1bc10c3d71c45e63d6d0d45e943adff1b5 1742 glance_2015.1.1-0ubuntu2~cloud2_all.deb
+ d1fa833c3dafb17ad43c549cc728ae7dbd970bee284c5a6e839839d0dafcd96d 641786 python-glance-doc_2015.1.1-0ubuntu2~cloud2_all.deb
+ 2d83a57c56a21833cfd2e58ca4a5e3fd4fe3e5b3a5a286b32889da9535af8cce 7092 glance-common_2015.1.1-0ubuntu2~cloud2_all.deb
+ 6312383d37b01869664681c81dca34e04437ed49c2ab170537dd9d4fec358236 26958 glance-api_2015.1.1-0ubuntu2~cloud2_all.deb
+ 70e1009b4f5edc7c421aea5f37582d60668f067c88533fb32791036be8c6a525 9834 glance-registry_2015.1.1-0ubuntu2~cloud2_all.deb
+Files: 
+ 8ed3067a392f88ef236cdceb19474392 439934 python extra python-glance_2015.1.1-0ubuntu2~cloud2_all.deb
+ aa42d7efe345414a284e0b57be087e99 1742 python extra glance_2015.1.1-0ubuntu2~cloud2_all.deb
+ 828326f073294947a0ed06900cf1be51 641786 doc extra python-glance-doc_2015.1.1-0ubuntu2~cloud2_all.deb
+ d837ae5620c41ec43bf356d148aa5c79 7092 python extra glance-common_2015.1.1-0ubuntu2~cloud2_all.deb
+ d9f87f7e992070d0ccff335fc3e0c8c7 26958 python extra glance-api_2015.1.1-0ubuntu2~cloud2_all.deb
+ 0e18bea8c05562210fe90921740d0c95 9834 python extra glance-registry_2015.1.1-0ubuntu2~cloud2_all.deb

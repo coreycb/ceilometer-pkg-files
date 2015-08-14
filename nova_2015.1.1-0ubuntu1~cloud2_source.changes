@@ -1,0 +1,78 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 13 Aug 2015 15:13:43 -0400
+Source: nova
+Binary: python-nova nova-common nova-compute nova-compute-libvirt nova-compute-lxc nova-compute-xen nova-compute-qemu nova-compute-kvm nova-compute-vmware nova-conductor nova-cert nova-scheduler nova-volume nova-ajax-console-proxy nova-novncproxy nova-xvpvncproxy nova-spiceproxy nova-serialproxy nova-api nova-network nova-objectstore nova-console nova-consoleauth nova-doc nova-api-metadata nova-api-os-compute nova-api-os-volume nova-api-ec2 nova-cells
+Architecture: source
+Version: 1:2015.1.1-0ubuntu1~cloud2
+Distribution: trusty
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description:
+ nova-ajax-console-proxy - OpenStack Compute - AJAX console proxy - transitional package
+ nova-api   - OpenStack Compute - API frontend
+ nova-api-ec2 - OpenStack Compute - EC2 API frontend
+ nova-api-metadata - OpenStack Compute - metadata API frontend
+ nova-api-os-compute - OpenStack Compute - OpenStack Compute API frontend
+ nova-api-os-volume - OpenStack Compute - OpenStack Volume API frontend
+ nova-cells - Openstack Compute - cells
+ nova-cert  - OpenStack Compute - certificate management
+ nova-common - OpenStack Compute - common files
+ nova-compute - OpenStack Compute - compute node base
+ nova-compute-kvm - OpenStack Compute - compute node (KVM)
+ nova-compute-libvirt - OpenStack Compute - compute node libvirt support
+ nova-compute-lxc - OpenStack Compute - compute node (LXC)
+ nova-compute-qemu - OpenStack Compute - compute node (QEmu)
+ nova-compute-vmware - OpenStack Compute - compute node (VMware)
+ nova-compute-xen - OpenStack Compute - compute node (Xen)
+ nova-conductor - OpenStack Compute - conductor service
+ nova-console - OpenStack Compute - Console
+ nova-consoleauth - OpenStack Compute - Console Authenticator
+ nova-doc   - OpenStack Compute - documentation
+ nova-network - OpenStack Compute - Network manager
+ nova-novncproxy - OpenStack Compute - NoVNC proxy
+ nova-objectstore - OpenStack Compute - object store
+ nova-scheduler - OpenStack Compute - virtual machine scheduler
+ nova-serialproxy - OpenStack Compute - serial proxy
+ nova-spiceproxy - OpenStack Compute - spice html5 proxy
+ nova-volume - OpenStack Compute - storage
+ nova-xvpvncproxy - OpenStack Compute - XVP VNC proxy
+ python-nova - OpenStack Compute Python libraries
+Changes:
+ nova (1:2015.1.1-0ubuntu1~cloud2) trusty-kilo; urgency=medium
+ .
+   * d/rules: Prevent dh_python2 from guessing dependencies.
+Checksums-Sha1:
+ 3ecc65bd35eec0ae6352ac9249b95c9f8b87d707 5711 nova_2015.1.1-0ubuntu1~cloud2.dsc
+ 3f9a7479e7969f23c0371b12cef233ca351392dc 4544374 nova_2015.1.1.orig.tar.gz
+ b6cb13ed85b808166ebf69d987b9ebc25b99e224 36012 nova_2015.1.1-0ubuntu1~cloud2.debian.tar.xz
+Checksums-Sha256:
+ b77c53aa8b5938d1e51f60caa99ca99bd379a2ee0ff67b81023bf70c9626a980 5711 nova_2015.1.1-0ubuntu1~cloud2.dsc
+ d9b480827995727f2ccc06e4b5709e689e8a466006e07157ce92bc9d074e197e 4544374 nova_2015.1.1.orig.tar.gz
+ 562d31420c91bde37fdb73a153d7de93896c786cb797419724bd20f2414dc2e9 36012 nova_2015.1.1-0ubuntu1~cloud2.debian.tar.xz
+Files:
+ 0e6491c0cbc5c7c667d0342a27b52de8 5711 net extra nova_2015.1.1-0ubuntu1~cloud2.dsc
+ d91d849643565145a1d6489ecc7aa7d3 4544374 net extra nova_2015.1.1.orig.tar.gz
+ 12a89c14db5cafbd3ec0a967e3a42bca 36012 net extra nova_2015.1.1-0ubuntu1~cloud2.debian.tar.xz
+Original-Maintainer: Openstack Maintainers <openstack@lists.launchpad.net>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCAAGBQJVzgUKAAoJEBW5s+4NzfgG0xkQAIrF5aw0i93rYOZm5pPpq19g
+NJsF0pz0OVn/6GYyhugnEmL7TJUMkePPKgQHl/Qb5y1OBBh2f4j3PA3cqN4abqOY
+JFCriOOfn2eNthgd3/m9AeW6l8E2kcRdFi6JI/vjs4NMCGR9wrUXmgPFZ2PDEoSj
+pT+Zlg3e4bDMoxo2f6cuHGq6TC6+YjuU8x1/2x3iabFxxh+6Rz0FCbiJBIrOs+YC
+egEkNnmYNp68qYUBzu1DnD4kG1nRonutiDQVLx8EWKAzmTMhSJccGjrh1g6VhTof
+alMFs7fqtVsVCOJDZTH/f0+u2OkuI09sltt5bjsEVLaddXhi6w/0jPygdNykUB5F
+gBS+l1jgvWL4B8FWjkBhyW5h512v1KW7Io6c5d8WQYVHaDO/bTlXL/PE/yWUNR2Q
+e14THCT9VrjSIAgux8/U5Olm/VdPfWIjVUO+tz5xu5G6EVqfu7rxlVnSihEYLPkg
+UdrzcBr+TohadFH/U6RLgSVlMmTKgu/8Q5z7R+tQ36TLrjOl8XuclEXxVCsR7pfV
+6tZlt3n2GT9TWyU2shQ9oQI+E8lVMiEsFgPC9vKuAelkJFzy89+oqg2Kp6bWfphh
+KekwlUjJwzoLrggUW4+Nbqx++QOOPJUxPUdzkKAyS7u6LDZv2qj4HlLy4iKxkDPo
+HM79ex0U7YHgJqdqSHrt
+=AU/N
+-----END PGP SIGNATURE-----

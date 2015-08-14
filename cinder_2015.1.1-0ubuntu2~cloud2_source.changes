@@ -1,0 +1,55 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 13 Aug 2015 14:45:16 -0400
+Source: cinder
+Binary: python-cinder cinder-common cinder-api cinder-volume cinder-scheduler cinder-backup
+Architecture: source
+Version: 1:2015.1.1-0ubuntu2~cloud2
+Distribution: trusty
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description:
+ cinder-api - Cinder storage service - API server
+ cinder-backup - Cinder storage service - Scheduler server
+ cinder-common - Cinder storage service - common files
+ cinder-scheduler - Cinder storage service - Scheduler server
+ cinder-volume - Cinder storage service - Volume server
+ python-cinder - Cinder Python libraries
+Changes:
+ cinder (1:2015.1.1-0ubuntu2~cloud2) trusty-kilo; urgency=medium
+ .
+   * d/rules: Prevent dh_python2 from guessing dependencies.
+Checksums-Sha1:
+ 8ed90e9f7d696959e50cc4676b3a4720321b303c 4021 cinder_2015.1.1-0ubuntu2~cloud2.dsc
+ cc150d3e12a13afd22f0f7f58c57d3f81ccc552f 2068679 cinder_2015.1.1.orig.tar.gz
+ 2e41f7e88621b4f5f3ab4e7d03622ca5a17bb469 13900 cinder_2015.1.1-0ubuntu2~cloud2.debian.tar.xz
+Checksums-Sha256:
+ 28152ebfa794bb5bfdb0f0007c80be94aa7a7ff899a9c112c8b199a5e1841455 4021 cinder_2015.1.1-0ubuntu2~cloud2.dsc
+ 11c6c7e749021978b9daeb631aa9f776a9ab70ea1549e8443a225a20ca98a945 2068679 cinder_2015.1.1.orig.tar.gz
+ 6424aab2c8b20eca8a98369abd7bde2eb10091e67ba541ab2dd82f9a4f1c516c 13900 cinder_2015.1.1-0ubuntu2~cloud2.debian.tar.xz
+Files:
+ dda94cdf54a4e7521207e8e824885d30 4021 net extra cinder_2015.1.1-0ubuntu2~cloud2.dsc
+ c8fad195f60e535af6fe6d4f432546b4 2068679 net extra cinder_2015.1.1.orig.tar.gz
+ e5fd396149a55827dbfe9b8824a18340 13900 net extra cinder_2015.1.1-0ubuntu2~cloud2.debian.tar.xz
+Original-Maintainer: Chuck Short <zulcss@ubuntu.com>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCAAGBQJVzgTIAAoJEBW5s+4NzfgGLXwP/jsQQ3Nc1OKUVlz/kw1S6JOW
+LPhLMWvIyxHpHJ+T63aVor2+EavWTBmkCo5wFTc9jVfoPmQFM9tFV/bmNvx7OwzB
+TngU6wZvdpqAFUQ2Sk1m6bmpUPCbaWmLpr5r3vLmfuFrUOfMUcqMKGA98J3J3jcl
+dhq9j1mTsMDKYUc2tdCrzN02a0BcclV1b2+FJlmEpIbNMG3RKKk5/YGVsAvmNeE3
+a9p0rJ2MRrM5zDpi1vgOqEniNa7PcK14rp1AOPEBQYOULpPHMoGyMJtwGAIFiOyG
+l4ZZSIygBq/3WgYan5lrali3IUEXfVv88OEcFcZZx6gETerqZk028twBFszjcWSB
+aDsC1Kj/5/eXf50jT/xDpkBqV5Iouqa2BiX/Mo3bSJW31J0b0QGBZxyHdpvrZ29o
+sBhADU5apqG5kGhrQoxmqHEheyxecYR98jwnomG02FCg+qNHlv3ND/XiL0mJRdjY
+pWtbUl8qjXb5EUDpcTIuDTxaPwqoaD2fwaTSPajCP82kMlJQN6cSJDIF8HPWfOC9
+B1t/W4w4Zedn0Rl2J03DOfT2jYepvhZjYo5QMzziDubtNoAxt2b7Rvv0/z8ST0tO
+cyQBBh+WBWE0thuzc/p2cUFjVmJ7HzwIt/iKq9bkPx7G64XNlwBX3liZkK9F/+9a
+ucBrsi4IKydjKLrF5fYj
+=LQtk
+-----END PGP SIGNATURE-----

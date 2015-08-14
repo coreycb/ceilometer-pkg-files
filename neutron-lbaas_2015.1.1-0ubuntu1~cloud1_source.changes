@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Thu, 13 Aug 2015 15:13:25 -0400
+Source: neutron-lbaas
+Binary: python-neutron-lbaas neutron-lbaas-agent
+Architecture: source
+Version: 1:2015.1.1-0ubuntu1~cloud1
+Distribution: trusty
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description:
+ neutron-lbaas-agent - Neutron is a virtual network service for Openstack - LBaaS agent
+ python-neutron-lbaas - Loadbalancer-as-a-Service driver for OpenStack Neutron
+Changes:
+ neutron-lbaas (1:2015.1.1-0ubuntu1~cloud1) trusty-kilo; urgency=medium
+ .
+   * d/rules: Prevent dh_python2 from guessing dependencies.
+Checksums-Sha1:
+ dde4f07586123ef6b269152e07cf1628d22e2055 2155 neutron-lbaas_2015.1.1-0ubuntu1~cloud1.dsc
+ 67ca0cd156cf6eb055a3b93541ed780a3a2de829 277660 neutron-lbaas_2015.1.1.orig.tar.gz
+ c1fe23fb2259dab5b2f2c336035ff6f2ca230fc9 4244 neutron-lbaas_2015.1.1-0ubuntu1~cloud1.debian.tar.xz
+Checksums-Sha256:
+ 80ba360eee6a66cb8efe2bde1ba33d3fe57f85dedd0706f4bc193527cd12c356 2155 neutron-lbaas_2015.1.1-0ubuntu1~cloud1.dsc
+ 26c08c3702782aa4fc6a15bac7a0b123d603999e232a68b3af8b8d0fd633a4df 277660 neutron-lbaas_2015.1.1.orig.tar.gz
+ 94356c44ab8e3a990df998c605c0c5b418f618f5936ba689109ca1a27dd4395d 4244 neutron-lbaas_2015.1.1-0ubuntu1~cloud1.debian.tar.xz
+Files:
+ d814f60411a66398b0f94e332b8c078d 2155 python optional neutron-lbaas_2015.1.1-0ubuntu1~cloud1.dsc
+ d97dc054e2c21bd21981cdd3ca39664b 277660 python optional neutron-lbaas_2015.1.1.orig.tar.gz
+ 6c8bfec5bd882716e168a1ce0e6049ea 4244 python optional neutron-lbaas_2015.1.1-0ubuntu1~cloud1.debian.tar.xz

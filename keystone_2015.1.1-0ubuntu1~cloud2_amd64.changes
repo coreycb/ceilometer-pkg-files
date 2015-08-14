@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 13 Aug 2015 15:12:53 -0400
+Source: keystone
+Binary: python-keystone keystone keystone-doc
+Architecture: all
+Version: 1:2015.1.1-0ubuntu1~cloud2
+Distribution: trusty
+Urgency: medium
+Maintainer: Corey Bryant <corey.bryant@canonical.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description: 
+ keystone   - OpenStack identity service - Daemons
+ keystone-doc - OpenStack identity service - Documentation
+ python-keystone - OpenStack identity service - Python library
+Changes: 
+ keystone (1:2015.1.1-0ubuntu1~cloud2) trusty-kilo; urgency=medium
+ .
+   * d/rules: Prevent dh_python2 from guessing dependencies.
+Checksums-Sha1: 
+ 51d299545a0f528445bf2b569e7e2149146abf0c 501216 python-keystone_2015.1.1-0ubuntu1~cloud2_all.deb
+ b2b779894d85b2bd44378aa38ac5e38ed4234b37 28972 keystone_2015.1.1-0ubuntu1~cloud2_all.deb
+ b0ec640ee3f902ee5806843eb656a05d6aa937a0 947120 keystone-doc_2015.1.1-0ubuntu1~cloud2_all.deb
+Checksums-Sha256: 
+ 00c6eab082f984fa667b0604d0e9e09a78bb302f77fdc467ab32cea45c19db7e 501216 python-keystone_2015.1.1-0ubuntu1~cloud2_all.deb
+ 27d3fc0f1e20e0a190f91ce82013a39dfb3659857187183abe5af56bbfbb5e94 28972 keystone_2015.1.1-0ubuntu1~cloud2_all.deb
+ de65b6357e8e92c7c564b607b35c449f9488502a4078fd790ac9e3f0e594784f 947120 keystone-doc_2015.1.1-0ubuntu1~cloud2_all.deb
+Files: 
+ b55d74d8f673afc2a6eaea7e6fa4f178 501216 python extra python-keystone_2015.1.1-0ubuntu1~cloud2_all.deb
+ b4dc94529fe4ffd740753a7710fa43c9 28972 python extra keystone_2015.1.1-0ubuntu1~cloud2_all.deb
+ e6b060674a6e836d93f8a4f85849d6e4 947120 doc extra keystone-doc_2015.1.1-0ubuntu1~cloud2_all.deb
+Original-Maintainer: Monty Taylor <mordred@inaugust.com>

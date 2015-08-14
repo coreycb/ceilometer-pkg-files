@@ -1,0 +1,43 @@
+Format: 1.8
+Date: Thu, 13 Aug 2015 15:12:35 -0400
+Source: heat
+Binary: python-heat heat-common heat-engine heat-api heat-api-cfn heat-api-cloudwatch
+Architecture: all
+Version: 2015.1.1-0ubuntu1~cloud1
+Distribution: trusty
+Urgency: medium
+Maintainer: Corey Bryant <corey.bryant@canonical.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description: 
+ heat-api   - OpenStack orchestration service - ReST API
+ heat-api-cfn - OpenStack orchestration service - CFN API
+ heat-api-cloudwatch - OpenStack orchestration service - CloudWatch API
+ heat-common - OpenStack orchestration service - common files
+ heat-engine - OpenStack orchestration service - engine
+ python-heat - OpenStack orchestration service - Python files
+Changes: 
+ heat (2015.1.1-0ubuntu1~cloud1) trusty-kilo; urgency=medium
+ .
+   * d/rules: Prevent dh_python2 from guessing dependencies.
+Checksums-Sha1: 
+ 4853db799ce0c02ac47a5fcb95f64e7348ec3cfb 550028 python-heat_2015.1.1-0ubuntu1~cloud1_all.deb
+ 319f30c9486e7e49c81158c6529856d76080fa4b 17042 heat-common_2015.1.1-0ubuntu1~cloud1_all.deb
+ f880dd43d794bcccd1ffc371570bc6b584caf6f2 6166 heat-engine_2015.1.1-0ubuntu1~cloud1_all.deb
+ 7b5b29232ef17794d8cd51cb32e54e07fd91c6b2 5656 heat-api_2015.1.1-0ubuntu1~cloud1_all.deb
+ 8d46d114a0c26f98dca2f6f0336d2f4dd816650a 5758 heat-api-cfn_2015.1.1-0ubuntu1~cloud1_all.deb
+ 800bcc6348bfe3a0843bc4496e6ea86b9005386f 5798 heat-api-cloudwatch_2015.1.1-0ubuntu1~cloud1_all.deb
+Checksums-Sha256: 
+ 97a11d3089f4d494e7ce9a2ed859c3ecdd2264900d9e7462532b212a49888581 550028 python-heat_2015.1.1-0ubuntu1~cloud1_all.deb
+ 7c96401e7a7166187ef6a59525a783425bf1d56e18274b41b53a0ea267a589b0 17042 heat-common_2015.1.1-0ubuntu1~cloud1_all.deb
+ a3028dd1c8f47a6f55dbf0957e00ecdd74fc0821308cf432179d9efdb7cab97e 6166 heat-engine_2015.1.1-0ubuntu1~cloud1_all.deb
+ de4404ef8687e099bb78a9886debb927cd4168f219730849953bdd880096a40e 5656 heat-api_2015.1.1-0ubuntu1~cloud1_all.deb
+ 790bf755a319b48816df5f9099231da277d916d851c63aae3b178653dc552220 5758 heat-api-cfn_2015.1.1-0ubuntu1~cloud1_all.deb
+ 4a8815a04b1fb008bd433358d81c2c2f19e427f84e770915449c83d8d50a067c 5798 heat-api-cloudwatch_2015.1.1-0ubuntu1~cloud1_all.deb
+Files: 
+ db67572bcf8dac1622acebdc464d7de2 550028 python optional python-heat_2015.1.1-0ubuntu1~cloud1_all.deb
+ b7455476e36201a77f25e151f7b92cb0 17042 web optional heat-common_2015.1.1-0ubuntu1~cloud1_all.deb
+ 35c70ddc1be96eb3513653bc479c350c 6166 web optional heat-engine_2015.1.1-0ubuntu1~cloud1_all.deb
+ 527a0f8ddc50d8eca5f2680f05ebd6b0 5656 web optional heat-api_2015.1.1-0ubuntu1~cloud1_all.deb
+ fd81697c1e59becc8793356b82af9056 5758 web optional heat-api-cfn_2015.1.1-0ubuntu1~cloud1_all.deb
+ 632edbd13228d33b28981f2c5588cb79 5798 web optional heat-api-cloudwatch_2015.1.1-0ubuntu1~cloud1_all.deb
+Original-Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>

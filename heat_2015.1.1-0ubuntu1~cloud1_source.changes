@@ -1,0 +1,55 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 13 Aug 2015 15:12:35 -0400
+Source: heat
+Binary: python-heat heat-common heat-engine heat-api heat-api-cfn heat-api-cloudwatch
+Architecture: source
+Version: 2015.1.1-0ubuntu1~cloud1
+Distribution: trusty
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description:
+ heat-api   - OpenStack orchestration service - ReST API
+ heat-api-cfn - OpenStack orchestration service - CFN API
+ heat-api-cloudwatch - OpenStack orchestration service - CloudWatch API
+ heat-common - OpenStack orchestration service - common files
+ heat-engine - OpenStack orchestration service - engine
+ python-heat - OpenStack orchestration service - Python files
+Changes:
+ heat (2015.1.1-0ubuntu1~cloud1) trusty-kilo; urgency=medium
+ .
+   * d/rules: Prevent dh_python2 from guessing dependencies.
+Checksums-Sha1:
+ 9d523d852ab4db38058341448a43d89ba8e244ba 4403 heat_2015.1.1-0ubuntu1~cloud1.dsc
+ 83e4e85d0c13acabd4676967c464d56d8e85805c 1073741 heat_2015.1.1.orig.tar.gz
+ 76d6eba3ba8bb7a5640f108921ef0d1fccd858ed 10972 heat_2015.1.1-0ubuntu1~cloud1.debian.tar.xz
+Checksums-Sha256:
+ 3559060d9071e8deafb8cac5821850ad5f5a67f90c43ccd005a8e2646df96e5e 4403 heat_2015.1.1-0ubuntu1~cloud1.dsc
+ 2bc5c4cd978f01f715ef85cf63ac741984a5d3242b8bf020ea1350fdd90834b0 1073741 heat_2015.1.1.orig.tar.gz
+ f485fc3ca26f9d208d963b184517c7a642543eb03c8bb81fa47cad06394a7bd0 10972 heat_2015.1.1-0ubuntu1~cloud1.debian.tar.xz
+Files:
+ 6281b091b6b826f2d8bb4def3ed02e21 4403 web optional heat_2015.1.1-0ubuntu1~cloud1.dsc
+ acb77d787b062ee123c94f64573e9b98 1073741 web optional heat_2015.1.1.orig.tar.gz
+ 8d8c2dd0528d08089a0df97c59561cc2 10972 web optional heat_2015.1.1-0ubuntu1~cloud1.debian.tar.xz
+Original-Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCAAGBQJVzgTeAAoJEBW5s+4NzfgGf7cQAJJPcKpTrXy3/V7OosWcz0dy
+nW8wd/PY5xWBCCHIo6YFV/lvy4/i92l2PqIWoZ8ZUkgsxg3QdZe6FO8ahfJy2c1J
+DTyRgkm/I7Te6ZN99osFlliMPl9QEgcmrNIlZgA/uHS4qFh972czf6U8zPbryoHy
+dszVsDvvtr/wQM8zUp/VgfsPGmR8ALNqa53eoSnJD8XSSJvmkDM0n5Nj/39r2QUR
+reEncH5ocA1cYg+Md/K20IB8rcr4dBd0NvqVyNSUam7zIjx2nbaPgh2jzgL88UjW
+xHyAbBhXvYnbT2uUjQ8fCU82mgPgwL/WCquYIp9HFrJwBbCW3IrNwfimd8MO1KwN
+bdoscyrzd94/QvE2y3fTC8bYYuYdEUFVg4pQUi493pBl/vVGCh4Z8d11vrRSY0Fa
+1eAzoLniI6PErea3/ClIT3pDWcHLDRQtwVXKbI53GbmRqznQzjsbPajxK2EZYQH3
+PlZlyU1WVy/yNfXDFXjZR9eY6IQOrMcyi7qTEuOk44GTPbx6+6Hk+NFO8IED/WAQ
+9NfCoVF/d+75jVvfuTypAt1Ks90Fgi+e257EZQMQhJnF93pCLiOqDXkBE4fDau1I
+LVobomOGUMT8ZDR4EXVl1khgE+ql1UuujUtrmQdr0zEGEpfMXk4Kqn/RScflT8Jr
+RbFLMhLM3rhe2Wb+KnP9
+=I+hb
+-----END PGP SIGNATURE-----
