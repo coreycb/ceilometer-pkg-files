@@ -1,0 +1,729 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S -sa -nc -v2015.1.1-0ubuntu2 --changes-option=-DDistribution=trusty
+dpkg-buildpackage: source package ceilometer
+dpkg-buildpackage: source version 2015.1.1-0ubuntu2~cloud2
+dpkg-buildpackage: source distribution trusty-kilo
+dpkg-buildpackage: source changed by Corey Bryant <corey.bryant@canonical.com>
+ dpkg-source --before-build ceilometer
+dpkg-buildpackage: warning: building a source package without cleaning up as you asked; it might contain undesired files
+ dpkg-source -b ceilometer
+dpkg-source: warning: Version number suggests Ubuntu changes, but there is no XSBC-Original-Maintainer field
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building ceilometer using existing ./ceilometer_2015.1.1.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file ChangeLog, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file pylintrc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup-test-env-mongodb.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .testr.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file MAINTAINERS, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file openstack-common.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file AUTHORS, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file babel.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup-test-env-mysql.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .coveragerc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ReleaseNotes, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tox.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file LICENSE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file HACKING.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file functions.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file requirements-py3.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file CONTRIBUTING.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup-test-env-postgresql.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup-test-env-elastic.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test-requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .mailmap, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test-requirements-py3.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/keystone_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/opts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/collector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/pipeline.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/cli.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/notifier.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/nova_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/coordination.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/messaging.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/notification.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/service.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/i18n.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/sample.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/neutron_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/orchestration
+dpkg-source: warning: ignoring deletion of file ceilometer/orchestration/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/orchestration/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/image
+dpkg-source: warning: ignoring deletion of file ceilometer/image/glance.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/image/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/image/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/cmd
+dpkg-source: warning: ignoring deletion of file ceilometer/cmd/storage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/cmd/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/cmd/agent_notification.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/cmd/collector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/cmd/polling.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/cmd/alarm.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/cmd/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/storage
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/impl_hbase.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/impl_db2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/impl_mongodb.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/pymongo_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/impl_log.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/impl_sqlalchemy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/storage/mongo
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/mongo/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/mongo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/storage/hbase
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/hbase/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/hbase/inmemory.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/hbase/migration.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/hbase/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/hbase/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/storage/sqlalchemy
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migration.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/storage/sqlalchemy/migrate_repo
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/storage/sqlalchemy/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/030_rename_meter_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/008_add_events.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/011_indexes_cleanup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/040_add_alarm_severity.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/036_drop_sourceassoc_resource_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/015_add_alarm_history_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/032_add_alarm_time_constraints.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/002_remove_duration.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/005_remove_resource_timestamp.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/034_drop_dump_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/004_add_counter_unit.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/038_normalise_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/031_add_new_meter_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/024_event_use_floatingprecision.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/033_alarm_id_rename.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/007_add_alarm_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/012_add_missing_foreign_keys.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/025_alarm_use_floatingprecision.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/029_sample_recorded_at.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/028_alembic_migrations.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/022_metadata_int_is_bigint.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/021_sqlite_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/010_add_index_to_meter.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/026_float_size.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/021_sqlite_upgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/017_convert_timestamp_as_datetime_to_decimal.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/013_rename_counter_to_meter_alarm.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/039_event_floatingprecision_pgsql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/019_alarm_history_detail_is_text.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/023_sqlite_upgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/023_add_trait_types.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/035_drop_user_project_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/021_add_event_types.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/006_counter_volume_is_float.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/027_remove_alarm_fk_constraints.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/014_add_event_message_id.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/003_set_utf8_charset.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/042_add_raw_column.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/037_sample_index_cleanup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/001_add_meter_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/009_event_strings.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/023_sqlite_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/018_resource_resource_metadata_is_text.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/020_add_metadata_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/041_expand_event_traits.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/storage/sqlalchemy/migrate_repo/versions/016_simpler_alarm.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/objectstore
+dpkg-source: warning: ignoring deletion of file ceilometer/objectstore/rgw_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/objectstore/swift_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/objectstore/swift.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/objectstore/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/objectstore/rgw.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/objectstore/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/openstack
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/openstack/common
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/loopingcall.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/systemd.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/log.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/threadgroup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/eventlet_backdoor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/_i18n.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/local.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/service.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/fileutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/openstack/common/versionutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/energy
+dpkg-source: warning: ignoring deletion of file ceilometer/energy/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/energy/kwapi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/api
+dpkg-source: warning: ignoring deletion of file ceilometer/api/hooks.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/app.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/rbac.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/app.wsgi, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/api/controllers
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/root.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/api/controllers/v2
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/root.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/meters.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/events.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/resources.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/query.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/capabilities.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/alarms.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/samples.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/api/controllers/v2/alarm_rules
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/alarm_rules/threshold.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/alarm_rules/combination.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/alarm_rules/gnocchi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/api/controllers/v2/alarm_rules/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/data_processing
+dpkg-source: warning: ignoring deletion of file ceilometer/data_processing/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/data_processing/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/identity
+dpkg-source: warning: ignoring deletion of file ceilometer/identity/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/identity/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/profiler
+dpkg-source: warning: ignoring deletion of file ceilometer/profiler/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/profiler/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/compute
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/util.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/discovery.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/compute/notifications
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/notifications/instance.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/notifications/cpu.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/notifications/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/compute/pollsters
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/pollsters/util.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/pollsters/disk.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/pollsters/instance.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/pollsters/net.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/pollsters/cpu.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/pollsters/memory.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/pollsters/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/compute/virt
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/compute/virt/vmware
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/vmware/inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/vmware/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/vmware/vsphere_operations.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/compute/virt/hyperv
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/hyperv/inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/hyperv/utilsv2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/hyperv/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/compute/virt/libvirt
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/libvirt/inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/libvirt/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/compute/virt/xenapi
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/xenapi/inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/compute/virt/xenapi/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/locale
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/ceilometer-log-warning.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/ceilometer-log-error.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/ceilometer-log-info.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/ceilometer.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/ceilometer-log-critical.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/locale/zh_CN
+dpkg-source: warning: ignoring deletion of directory ceilometer/locale/zh_CN/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/zh_CN/LC_MESSAGES/ceilometer.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/zh_CN/LC_MESSAGES/ceilometer-log-error.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/zh_CN/LC_MESSAGES/ceilometer-log-info.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/zh_CN/LC_MESSAGES/ceilometer-log-warning.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/locale/en_GB
+dpkg-source: warning: ignoring deletion of directory ceilometer/locale/en_GB/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/en_GB/LC_MESSAGES/ceilometer.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/en_GB/LC_MESSAGES/ceilometer-log-info.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/locale/fr
+dpkg-source: warning: ignoring deletion of directory ceilometer/locale/fr/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file ceilometer/locale/fr/LC_MESSAGES/ceilometer-log-info.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/hacking
+dpkg-source: warning: ignoring deletion of file ceilometer/hacking/checks.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hacking/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/alarm
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/rpc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/service.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/alarm/storage
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/impl_hbase.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/impl_db2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/impl_mongodb.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/pymongo_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/impl_log.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/storage/impl_sqlalchemy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/alarm/evaluator
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/evaluator/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/evaluator/threshold.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/evaluator/combination.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/evaluator/gnocchi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/evaluator/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/alarm/partition
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/partition/coordination.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/partition/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/alarm/notifier
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/notifier/test.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/notifier/rest.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/notifier/log.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/notifier/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/alarm/notifier/trust.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/transformer
+dpkg-source: warning: ignoring deletion of file ceilometer/transformer/conversions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/transformer/accumulator.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/transformer/arithmetic.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/transformer/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/hardware
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/discovery.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/plugin.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/hardware/pollsters
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/pollsters/util.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/pollsters/disk.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/pollsters/system.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/pollsters/net.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/pollsters/cpu.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/pollsters/memory.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/pollsters/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/pollsters/network_aggregated.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/hardware/inspector
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/inspector/snmp.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/inspector/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/hardware/inspector/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/dispatcher
+dpkg-source: warning: ignoring deletion of file ceilometer/dispatcher/http.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/dispatcher/database.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/dispatcher/file.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/dispatcher/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/key_value_storage
+dpkg-source: warning: ignoring deletion of file ceilometer/key_value_storage/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/key_value_storage/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/agent
+dpkg-source: warning: ignoring deletion of file ceilometer/agent/plugin_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/agent/manager.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/agent/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/agent/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/agent/discovery
+dpkg-source: warning: ignoring deletion of file ceilometer/agent/discovery/endpoint.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/agent/discovery/localnode.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/agent/discovery/tenant.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/agent/discovery/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/publisher
+dpkg-source: warning: ignoring deletion of file ceilometer/publisher/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/publisher/test.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/publisher/direct.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/publisher/file.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/publisher/messaging.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/publisher/kafka_broker.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/publisher/udp.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/publisher/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/event
+dpkg-source: warning: ignoring deletion of file ceilometer/event/endpoint.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/converter.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/trait_plugins.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/event/storage
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/impl_hbase.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/impl_db2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/impl_mongodb.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/pymongo_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/impl_log.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/impl_elasticsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/event/storage/impl_sqlalchemy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/ipmi
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/ipmi/platform
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/platform/ipmitool.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/platform/exception.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/platform/ipmi_sensor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/platform/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/platform/intel_node_manager.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/ipmi/notifications
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/notifications/ironic.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/notifications/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/ipmi/pollsters
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/pollsters/sensor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/pollsters/node.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/ipmi/pollsters/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/network
+dpkg-source: warning: ignoring deletion of file ceilometer/network/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/floatingip.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/network/statistics
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/port.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/flow.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/switch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/driver.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/network/statistics/opencontrail
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/opencontrail/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/opencontrail/driver.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/opencontrail/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/network/statistics/opendaylight
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/opendaylight/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/opendaylight/driver.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/statistics/opendaylight/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/network/services
+dpkg-source: warning: ignoring deletion of file ceilometer/network/services/lbaas.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/services/discovery.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/services/fwaas.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/services/vpnaas.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/services/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/network/services/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/volume
+dpkg-source: warning: ignoring deletion of file ceilometer/volume/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/volume/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_bin.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_neutronclient.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_messaging.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_notifier.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_collector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/constants.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_coordination.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_novaclient.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_notification.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_decoupled_pipeline.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_sample.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/mocks.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_hacking.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/pipeline_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/db.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_event_pipeline.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/test_deprecated_pipeline.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/orchestration
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/orchestration/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/orchestration/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/image
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/image/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/image/test_glance.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/image/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/storage
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_impl_mongodb.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_impl_hbase.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_impl_db2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_impl_sqlalchemy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_pymongo_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_get_connection.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_storage_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/test_impl_log.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/storage/sqlalchemy
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/sqlalchemy/test_models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/storage/sqlalchemy/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/objectstore
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/objectstore/test_swift_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/objectstore/test_rgw_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/objectstore/test_rgw.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/objectstore/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/objectstore/test_swift.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/objectstore/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/energy
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/energy/test_kwapi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/energy/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/api
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/test_app.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/test_versions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/api/v2
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_statistics.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_query.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_event_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_wsme_custom_type.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_compute_duration_by_resource_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_alarm_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_post_samples_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_app.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_list_resources_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_capabilities.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_statistics_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_acl_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_complex_query.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_list_events_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_complex_query_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/test_list_meters_scenarios.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/api/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/data_processing
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/data_processing/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/data_processing/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/identity
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/identity/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/identity/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/profiler
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/profiler/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/profiler/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/compute
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/compute/notifications
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/notifications/test_cpu.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/notifications/test_instance.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/notifications/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/compute/pollsters
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/pollsters/test_diskio.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/pollsters/test_cpu.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/pollsters/test_instance.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/pollsters/test_net.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/pollsters/test_memory.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/pollsters/test_location_metadata.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/pollsters/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/pollsters/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/compute/virt
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/compute/virt/vmware
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/vmware/test_vsphere_operations.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/vmware/test_inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/vmware/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/compute/virt/hyperv
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/hyperv/test_utilsv2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/hyperv/test_inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/hyperv/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/compute/virt/libvirt
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/libvirt/test_inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/libvirt/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/compute/virt/xenapi
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/xenapi/test_inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/compute/virt/xenapi/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/alarm
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/test_notifier.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/test_rpc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/test_partitioned_alarm_svc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/test_alarm_svc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/test_singleton_alarm_svc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/alarm/evaluator
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/evaluator/test_gnocchi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/evaluator/test_threshold.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/evaluator/test_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/evaluator/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/evaluator/test_combination.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/evaluator/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/alarm/partition
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/partition/test_coordination.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/alarm/partition/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/gabbi
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/test_gabbi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/gabbi/gabbits
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/api_events_no_data.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/samples.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/meters.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/resources-fixtured.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/capabilities.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/resources-empty.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/basic.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/alarms.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/api_events_with_data.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/clean-samples.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/gabbi/gabbits/fixture-samples.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/hardware
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/hardware/pollsters
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/test_cpu.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/test_disk.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/test_util.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/test_network_aggregated.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/test_net.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/test_system.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/test_memory.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/pollsters/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/hardware/inspector
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/inspector/test_snmp.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/inspector/test_inspector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/hardware/inspector/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/dispatcher
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/dispatcher/test_db.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/dispatcher/test_file.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/dispatcher/test_http.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/dispatcher/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/key_value_storage
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/key_value_storage/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/key_value_storage/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/agent
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/agent/test_manager.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/agent/test_discovery.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/agent/test_plugin.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/agent/agentbase.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/agent/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/publisher
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/publisher/test_kafka_broker_publisher.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/publisher/test_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/publisher/test_direct.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/publisher/test_file.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/publisher/test_messaging_publisher.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/publisher/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/publisher/test_udp.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/event
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/event/test_converter.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/event/test_endpoint.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/event/test_trait_plugins.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/event/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/ipmi
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/ipmi/platform
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/platform/ipmitool_test_data.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/platform/test_intel_node_manager.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/platform/test_ipmi_sensor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/platform/fake_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/platform/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/ipmi/notifications
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/notifications/ipmi_test_data.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/notifications/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/notifications/test_ironic.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/ipmi/pollsters
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/pollsters/test_node.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/pollsters/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/pollsters/test_sensor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/ipmi/pollsters/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/network
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/test_floatingip.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/network/statistics
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/test_statistics.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/test_switch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/test_flow.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/test_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/test_port.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/test_driver.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/network/statistics/opencontrail
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/opencontrail/test_driver.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/opencontrail/test_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/opencontrail/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/network/statistics/opendaylight
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/opendaylight/test_driver.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/opendaylight/test_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/statistics/opendaylight/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/network/services
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/services/test_vpnaas.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/services/test_lbaas.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/services/test_fwaas.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/network/services/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer/tests/volume
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/volume/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer/tests/volume/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory etc
+dpkg-source: warning: ignoring deletion of directory etc/ceilometer
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/rootwrap.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/pipeline.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/event_definitions.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/deprecated_pipeline.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/policy.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/policy.json.sample, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/README-ceilometer.conf.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/api_paste.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/event_pipeline.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/gabbi_pipeline.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory etc/ceilometer/rootwrap.d
+dpkg-source: warning: ignoring deletion of file etc/ceilometer/rootwrap.d/ipmi.filters, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory etc/apache2
+dpkg-source: warning: ignoring deletion of file etc/apache2/ceilometer, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory tools
+dpkg-source: warning: ignoring deletion of file tools/lintstack.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/lintstack.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/make_test_event_data.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/make_test_data.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/enable_notifications.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/test_hbase_table_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/make_test_data.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/ceilometer-test-event.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/release-bugs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/show_data.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/send_test_data.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory rally-jobs
+dpkg-source: warning: ignoring deletion of file rally-jobs/ceilometer.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file rally-jobs/README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory rally-jobs/extra
+dpkg-source: warning: ignoring deletion of file rally-jobs/extra/README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file rally-jobs/extra/fake.img, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory rally-jobs/plugins
+dpkg-source: warning: ignoring deletion of file rally-jobs/plugins/README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file rally-jobs/plugins/plugin_sample.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory ceilometer.egg-info
+dpkg-source: warning: ignoring deletion of file ceilometer.egg-info/not-zip-safe, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer.egg-info/dependency_links.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer.egg-info/top_level.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer.egg-info/requires.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer.egg-info/entry_points.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer.egg-info/SOURCES.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer.egg-info/pbr.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ceilometer.egg-info/PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc
+dpkg-source: warning: ignoring deletion of file doc/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source
+dpkg-source: warning: ignoring deletion of file doc/source/6-storagemodel.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/1-agents.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/new_meters.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/index.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/glossary.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/plugins.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/format.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/conf.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/3-Pipeline.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/5-multi-publish.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/ceilo-arch.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/2-accessmodel.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/contributing.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/4-Transformer.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/measurements.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/configuration.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/testing.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/overview.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/events.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/architecture.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/_templates
+dpkg-source: warning: ignoring deletion of file doc/source/_templates/.placeholder, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/install
+dpkg-source: warning: ignoring deletion of file doc/source/install/mod_wsgi.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/install/index.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/install/development.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/install/manual.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/install/dbreco.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/webapi
+dpkg-source: warning: ignoring deletion of file doc/source/webapi/index.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/webapi/v2.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/webapi/v1.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/releasenotes
+dpkg-source: warning: ignoring deletion of file doc/source/releasenotes/index.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/releasenotes/folsom.rst, use --include-removal to override
+dpkg-source: info: building ceilometer in ceilometer_2015.1.1-0ubuntu2~cloud2.debian.tar.xz
+dpkg-source: info: building ceilometer in ceilometer_2015.1.1-0ubuntu2~cloud2.dsc
+ dpkg-genchanges -S -sa -DDistribution=trusty -v2015.1.1-0ubuntu2 >../ceilometer_2015.1.1-0ubuntu2~cloud2_source.changes
+dpkg-genchanges: warning: the current version (2015.1.1-0ubuntu2~cloud2) is earlier than the previous one (2015.1.1-0ubuntu2)
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build ceilometer
+dpkg-buildpackage: full upload (original source is included)
