@@ -1,0 +1,705 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S -sa -nc -v1:2015.1.1-0ubuntu1 --changes-option=-DDistribution=trusty
+dpkg-buildpackage: source package keystone
+dpkg-buildpackage: source version 1:2015.1.1-0ubuntu1~cloud3
+dpkg-buildpackage: source distribution trusty-kilo
+dpkg-buildpackage: source changed by Corey Bryant <corey.bryant@canonical.com>
+ dpkg-source --before-build keystone
+dpkg-buildpackage: warning: building a source package without cleaning up as you asked; it might contain undesired files
+ dpkg-source -b keystone
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building keystone using existing ./keystone_2015.1.1.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file ChangeLog, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .testr.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file openstack-common.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file AUTHORS, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file babel.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .coveragerc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tox.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file LICENSE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file HACKING.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file requirements-py3.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file run_tests.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file CONTRIBUTING.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test-requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file MANIFEST.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .mailmap, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test-requirements-py3.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory examples
+dpkg-source: warning: ignoring deletion of directory examples/pki
+dpkg-source: warning: ignoring deletion of file examples/pki/gen_pki.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory examples/pki/certs
+dpkg-source: warning: ignoring deletion of file examples/pki/certs/signing_cert.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/certs/cacert.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/certs/ssl_cert.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/certs/middleware.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory examples/pki/private
+dpkg-source: warning: ignoring deletion of file examples/pki/private/signing_key.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/private/ssl_key.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/private/cakey.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory examples/pki/cms
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_revoked.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_unscoped.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_unscoped.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_scoped.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_revoked.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_scoped.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/revocation_list.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/revocation_list.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory config-generator
+dpkg-source: warning: ignoring deletion of file config-generator/keystone.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/default_catalog.templates, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/logging.conf.sample, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/keystone.conf.sample, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/keystone-paste.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/sso_callback_template.html, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/policy.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/policy.v3cloudsample.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone.egg-info
+dpkg-source: warning: ignoring deletion of file keystone.egg-info/not-zip-safe, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone.egg-info/dependency_links.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone.egg-info/top_level.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone.egg-info/requires.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone.egg-info/entry_points.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone.egg-info/SOURCES.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone.egg-info/pbr.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone.egg-info/PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory bin
+dpkg-source: warning: ignoring deletion of file bin/keystone-manage, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file bin/keystone-all, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory tools
+dpkg-source: warning: ignoring deletion of file tools/sample_data.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/install_venv.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/convert_to_sqlite.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/install_venv_common.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/pretty_tox.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/colorizer.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/with_venv.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory httpd
+dpkg-source: warning: ignoring deletion of file httpd/wsgi-keystone.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file httpd/keystone.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file httpd/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory rally-scenarios
+dpkg-source: warning: ignoring deletion of file rally-scenarios/keystone.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file rally-scenarios/README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone
+dpkg-source: warning: ignoring deletion of file keystone/backends.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/clean.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/cli.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/exception.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/service.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/i18n.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/assignment
+dpkg-source: warning: ignoring deletion of file keystone/assignment/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/assignment/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/assignment/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/assignment/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/assignment/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/assignment/backends
+dpkg-source: warning: ignoring deletion of file keystone/assignment/backends/ldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/assignment/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/assignment/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/assignment/role_backends
+dpkg-source: warning: ignoring deletion of file keystone/assignment/role_backends/ldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/assignment/role_backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/assignment/role_backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/token
+dpkg-source: warning: ignoring deletion of file keystone/token/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/provider.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/token/providers
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/common.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/pki.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/pkiz.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/uuid.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/token/providers/fernet
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/fernet/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/fernet/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/fernet/token_formatters.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/providers/fernet/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/token/persistence
+dpkg-source: warning: ignoring deletion of file keystone/token/persistence/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/persistence/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/token/persistence/backends
+dpkg-source: warning: ignoring deletion of file keystone/token/persistence/backends/memcache.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/persistence/backends/memcache_pool.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/persistence/backends/kvs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/persistence/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/token/persistence/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/openstack
+dpkg-source: warning: ignoring deletion of file keystone/openstack/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/openstack/common
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/loopingcall.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/systemd.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/threadgroup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/eventlet_backdoor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/_i18n.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/service.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/fileutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/openstack/common/versionutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib
+dpkg-source: warning: ignoring deletion of file keystone/contrib/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/endpoint_filter
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/endpoint_filter/backends
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/backends/catalog_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/endpoint_filter/migrate_repo
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/endpoint_filter/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/migrate_repo/versions/001_add_endpoint_filtering_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/migrate_repo/versions/002_add_endpoint_groups.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_filter/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/user_crud
+dpkg-source: warning: ignoring deletion of file keystone/contrib/user_crud/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/user_crud/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/endpoint_policy
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/endpoint_policy/backends
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/endpoint_policy/migrate_repo
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/endpoint_policy/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/migrate_repo/versions/001_add_endpoint_policy_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/endpoint_policy/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/ec2
+dpkg-source: warning: ignoring deletion of file keystone/contrib/ec2/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/ec2/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/ec2/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/ec2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/federation
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/idp.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/federation/backends
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/federation/migrate_repo
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/federation/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/001_add_identity_provider_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/006_fixup_service_provider_attributes.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/005_add_service_provider_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/002_add_mapping_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/004_add_remote_id_column.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/008_add_relay_state_to_sp.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/007_add_remote_id_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/003_mapping_id_nullable_false.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/federation/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/oauth1
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/validator.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/oauth1/backends
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/oauth1/migrate_repo
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/oauth1/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/migrate_repo/versions/003_consumer_description_nullalbe.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/migrate_repo/versions/001_add_oauth_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/migrate_repo/versions/002_fix_oauth_tables_fk.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/migrate_repo/versions/004_request_token_roles_nullable.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/migrate_repo/versions/005_consumer_id_index.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/oauth1/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/revoke
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/model.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/revoke/backends
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/backends/kvs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/revoke/migrate_repo
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/revoke/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/migrate_repo/versions/001_revoke_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/migrate_repo/versions/002_add_audit_id_and_chain_to_revoke_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/revoke/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/admin_crud
+dpkg-source: warning: ignoring deletion of file keystone/contrib/admin_crud/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/admin_crud/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/simple_cert
+dpkg-source: warning: ignoring deletion of file keystone/contrib/simple_cert/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/simple_cert/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/simple_cert/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/simple_cert/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/s3
+dpkg-source: warning: ignoring deletion of file keystone/contrib/s3/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/s3/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/example
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/configuration.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/example/migrate_repo
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/contrib/example/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/migrate_repo/versions/001_example_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/contrib/example/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/identity
+dpkg-source: warning: ignoring deletion of file keystone/identity/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/generator.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/identity/backends
+dpkg-source: warning: ignoring deletion of file keystone/identity/backends/ldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/identity/id_generators
+dpkg-source: warning: ignoring deletion of file keystone/identity/id_generators/sha256.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/id_generators/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/identity/mapping_backends
+dpkg-source: warning: ignoring deletion of file keystone/identity/mapping_backends/mapping.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/mapping_backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/identity/mapping_backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/models
+dpkg-source: warning: ignoring deletion of file keystone/models/token_model.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/models/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/policy
+dpkg-source: warning: ignoring deletion of file keystone/policy/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/policy/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/policy/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/policy/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/policy/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/policy/backends
+dpkg-source: warning: ignoring deletion of file keystone/policy/backends/rules.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/policy/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/policy/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale
+dpkg-source: warning: ignoring deletion of file keystone/locale/keystone-log-critical.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/locale/keystone.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/locale/keystone-log-info.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/locale/keystone-log-warning.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/locale/keystone-log-error.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/es
+dpkg-source: warning: ignoring deletion of directory keystone/locale/es/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/es/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/zh_CN
+dpkg-source: warning: ignoring deletion of directory keystone/locale/zh_CN/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/zh_CN/LC_MESSAGES/keystone-log-error.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/locale/zh_CN/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/locale/zh_CN/LC_MESSAGES/keystone-log-info.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/hu
+dpkg-source: warning: ignoring deletion of directory keystone/locale/hu/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/hu/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/de
+dpkg-source: warning: ignoring deletion of directory keystone/locale/de/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/de/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/pl_PL
+dpkg-source: warning: ignoring deletion of directory keystone/locale/pl_PL/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/pl_PL/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/ru
+dpkg-source: warning: ignoring deletion of directory keystone/locale/ru/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/ru/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/zh_TW
+dpkg-source: warning: ignoring deletion of directory keystone/locale/zh_TW/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/zh_TW/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/ja
+dpkg-source: warning: ignoring deletion of directory keystone/locale/ja/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/ja/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/en_AU
+dpkg-source: warning: ignoring deletion of directory keystone/locale/en_AU/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/en_AU/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/it
+dpkg-source: warning: ignoring deletion of directory keystone/locale/it/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/it/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/fr
+dpkg-source: warning: ignoring deletion of directory keystone/locale/fr/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/fr/LC_MESSAGES/keystone-log-error.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/locale/fr/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/locale/fr/LC_MESSAGES/keystone-log-info.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/ko_KR
+dpkg-source: warning: ignoring deletion of directory keystone/locale/ko_KR/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/ko_KR/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/locale/pt_BR
+dpkg-source: warning: ignoring deletion of directory keystone/locale/pt_BR/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file keystone/locale/pt_BR/LC_MESSAGES/keystone-log-critical.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/hacking
+dpkg-source: warning: ignoring deletion of file keystone/hacking/checks.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/hacking/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/resource
+dpkg-source: warning: ignoring deletion of file keystone/resource/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/resource/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/resource/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/resource/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/resource/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/resource/backends
+dpkg-source: warning: ignoring deletion of file keystone/resource/backends/ldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/resource/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/resource/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/resource/config_backends
+dpkg-source: warning: ignoring deletion of file keystone/resource/config_backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/resource/config_backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/auth
+dpkg-source: warning: ignoring deletion of file keystone/auth/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/auth/plugins
+dpkg-source: warning: ignoring deletion of file keystone/auth/plugins/token.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/plugins/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/plugins/external.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/plugins/mapped.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/plugins/password.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/plugins/saml2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/plugins/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/auth/plugins/oauth1.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/trust
+dpkg-source: warning: ignoring deletion of file keystone/trust/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/trust/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/trust/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/trust/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/trust/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/trust/backends
+dpkg-source: warning: ignoring deletion of file keystone/trust/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/trust/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common
+dpkg-source: warning: ignoring deletion of file keystone/common/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/openssl.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/driver_hints.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/dependency.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/json_home.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/router.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/pemutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/base64utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/authorization.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/wsgi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/extension.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/manager.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/controller.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/cache
+dpkg-source: warning: ignoring deletion of file keystone/common/cache/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/cache/_memcache_pool.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/cache/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/cache/backends
+dpkg-source: warning: ignoring deletion of file keystone/common/cache/backends/noop.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/cache/backends/mongo.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/cache/backends/memcache_pool.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/cache/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/validation
+dpkg-source: warning: ignoring deletion of file keystone/common/validation/parameter_types.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/validation/validators.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/validation/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/sql
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migration_helpers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/sql/migrate_repo
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/sql/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/053_endpoint_to_region_association.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/058_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/061_add_parent_project.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/052_add_auth_url_to_region.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/060_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/051_add_id_mapping.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/067_drop_redundant_mysql_index.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/062_drop_assignment_role_fk.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/054_add_actor_id_index.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/048_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/059_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/063_drop_region_auth_url.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/044_icehouse.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/065_add_domain_config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/047_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/049_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/055_add_indexes_to_token_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/057_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/046_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/050_fk_consistent_indexes.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/064_drop_user_and_group_fk.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/045_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/056_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/sql/migrate_repo/versions/066_fixup_service_name_value.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/ldap
+dpkg-source: warning: ignoring deletion of file keystone/common/ldap/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/ldap/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/kvs
+dpkg-source: warning: ignoring deletion of file keystone/common/kvs/legacy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/kvs/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/kvs/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/kvs/backends
+dpkg-source: warning: ignoring deletion of file keystone/common/kvs/backends/inmemdb.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/kvs/backends/memcached.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/kvs/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/common/environment
+dpkg-source: warning: ignoring deletion of file keystone/common/environment/eventlet_server.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/common/environment/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/server
+dpkg-source: warning: ignoring deletion of file keystone/server/common.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/server/eventlet.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/server/wsgi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/server/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/middleware
+dpkg-source: warning: ignoring deletion of file keystone/middleware/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/middleware/ec2_token.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/middleware/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/catalog
+dpkg-source: warning: ignoring deletion of file keystone/catalog/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/catalog/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/catalog/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/catalog/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/catalog/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/catalog/backends
+dpkg-source: warning: ignoring deletion of file keystone/catalog/backends/templated.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/catalog/backends/kvs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/catalog/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/catalog/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/credential
+dpkg-source: warning: ignoring deletion of file keystone/credential/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/credential/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/credential/controllers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/credential/routers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/credential/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/credential/backends
+dpkg-source: warning: ignoring deletion of file keystone/credential/backends/sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/credential/backends/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests
+dpkg-source: warning: ignoring deletion of file keystone/tests/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/default_catalog.templates, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_contrib_s3_core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_domain_config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_cert_setup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/identity_mapping.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_ldap_livetest.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/rest.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_token_bind.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v2_keystoneclient.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_wsgi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_id_mapping_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_rules.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_federation_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/mapping_fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_assignment.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_ssl.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_kvs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_url_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_endpoint_policy_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_hacking_checks.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_endpoint_policy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_protection.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v2_keystoneclient_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_revoke.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_cli.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/default_fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_token_provider.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_policy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_validation.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/filtering.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_credential.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_federation.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_oauth1.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v2_controller.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_policy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_cache.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/federation_fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_ldap_pool_livetest.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_sql_livetest.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/fakeldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_catalog.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_identity.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_contrib_ec2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_driver_hints.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_endpoint_policy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_contrib_simple_cert.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_templated.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_ipv6.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_catalog.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_no_admin_token_auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_kvs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_singular_plural.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_controller.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_associate_project_endpoint_extension.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_exception.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_ec2_token_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_ldap_tls_livetest.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_auth_plugin.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_versions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_ldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_backend_ldap_pool.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_filters.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_sql_upgrade.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_sql_migrate_extensions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_v3_os_revoke.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/test_cache_backend_mongo.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/token
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/token/test_provider.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/token/test_fernet_provider.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/token/test_token_model.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/token/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/token/test_token_data_helper.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/identity
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/identity/test_core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/identity/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/config_files
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_sql.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_liveldap.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_postgresql.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_pool_liveldap.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/deprecated.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_multi_ldap_sql.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_ldap_pool.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_db2.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_mysql.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/test_auth_plugin.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/deprecated_override.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_tls_liveldap.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_ldap.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/backend_ldap_sql.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/config_files/domain_configs_multi_ldap
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/domain_configs_multi_ldap/keystone.domain2.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/domain_configs_multi_ldap/keystone.domain1.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/domain_configs_multi_ldap/keystone.Default.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/config_files/domain_configs_default_ldap_one_sql
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/domain_configs_default_ldap_one_sql/keystone.domain1.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/config_files/domain_configs_one_sql_one_ldap
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/domain_configs_one_sql_one_ldap/keystone.domain1.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/domain_configs_one_sql_one_ldap/keystone.Default.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/config_files/domain_configs_one_extra_sql
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/config_files/domain_configs_one_extra_sql/keystone.domain2.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/backend
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/core_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/core_ldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/backend/domain_config
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/domain_config/test_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/domain_config/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/domain_config/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/backend/role
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/role/test_sql.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/role/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/role/test_ldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/backend/role/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/common
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_json_home.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_base64utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_notifications.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_connection_pool.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_ldap.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_injection.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_pemutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/common/test_sql_core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/saml2
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/saml2/signed_saml2_assertion.xml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/saml2/idp_saml2_metadata.xml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/ksfixtures
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/ksfixtures/cache.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/ksfixtures/temporaryfile.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/ksfixtures/key_repository.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/ksfixtures/hacking.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/ksfixtures/database.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/ksfixtures/appserver.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/ksfixtures/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/catalog
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/catalog/test_core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/catalog/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystone/tests/unit/tests
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/tests/test_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/tests/test_core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystone/tests/unit/tests/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc
+dpkg-source: warning: ignoring deletion of file doc/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source
+dpkg-source: warning: ignoring deletion of file doc/source/configuringservices.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/key_terms.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/index.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/api_curl_examples.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/cli_examples.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/developing.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/external-auth.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/event_notifications.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/conf.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extension_development.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/configure_federation.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/setup.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/http-api.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/configuration.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/community.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/apache-httpd.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/installing.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/middlewarearchitecture.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extensions.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/architecture.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/man
+dpkg-source: warning: ignoring deletion of file doc/source/man/keystone-manage.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/keystone-all.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/extensions
+dpkg-source: warning: ignoring deletion of file doc/source/extensions/openidc.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extensions/shibboleth.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extensions/federation.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extensions/oauth1.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extensions/revoke.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extensions/websso.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extensions/endpoint_policy.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/extensions/endpoint_filter.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/ext
+dpkg-source: warning: ignoring deletion of file doc/ext/apidoc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/ext/__init__.py, use --include-removal to override
+dpkg-source: info: building keystone in keystone_2015.1.1-0ubuntu1~cloud3.debian.tar.xz
+dpkg-source: info: building keystone in keystone_2015.1.1-0ubuntu1~cloud3.dsc
+ dpkg-genchanges -S -sa -DDistribution=trusty -v1:2015.1.1-0ubuntu1 >../keystone_2015.1.1-0ubuntu1~cloud3_source.changes
+dpkg-genchanges: warning: the current version (1:2015.1.1-0ubuntu1~cloud3) is earlier than the previous one (1:2015.1.1-0ubuntu1)
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build keystone
+dpkg-buildpackage: full upload (original source is included)

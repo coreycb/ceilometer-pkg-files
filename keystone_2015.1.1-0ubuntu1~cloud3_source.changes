@@ -1,0 +1,53 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 13 Aug 2015 15:12:53 -0400
+Source: keystone
+Binary: python-keystone keystone keystone-doc
+Architecture: source
+Version: 1:2015.1.1-0ubuntu1~cloud3
+Distribution: trusty
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description:
+ keystone   - OpenStack identity service - Daemons
+ keystone-doc - OpenStack identity service - Documentation
+ python-keystone - OpenStack identity service - Python library
+Changes:
+ keystone (1:2015.1.1-0ubuntu1~cloud3) trusty-kilo; urgency=medium
+ .
+   * d/rules: Prevent dh_python2 from guessing dependencies.
+   * d/control: Move python-pysaml2 to Depends.
+Checksums-Sha1:
+ 44f34bec2408c9712b5dbe093b13571dd5236546 3735 keystone_2015.1.1-0ubuntu1~cloud3.dsc
+ 60fbc19b8a57d84014a2e41f0e9fbe9df8121211 884979 keystone_2015.1.1.orig.tar.gz
+ a17f882877a38119a125105d490f8d41680a055f 14612 keystone_2015.1.1-0ubuntu1~cloud3.debian.tar.xz
+Checksums-Sha256:
+ 5c88ce1a339b13165f7200e74cf578da29f12fc648f2e9bd23668c34449662f4 3735 keystone_2015.1.1-0ubuntu1~cloud3.dsc
+ 6c703f2d26c6a5f4fd4963dc11474b55cf87c5890d97361a4738df35eea258c5 884979 keystone_2015.1.1.orig.tar.gz
+ 1bc244ae0fe63e357e06f7b2d7eac8a65433635961b994ad651a69c55a34d724 14612 keystone_2015.1.1-0ubuntu1~cloud3.debian.tar.xz
+Files:
+ a7085b22d2c278b3f0224edb1efa9387 3735 net extra keystone_2015.1.1-0ubuntu1~cloud3.dsc
+ 1b95521027f74fee2b53588de3fd3bab 884979 net extra keystone_2015.1.1.orig.tar.gz
+ d08a92f2839ff50e3d55d6e0809c8fbe 14612 net extra keystone_2015.1.1-0ubuntu1~cloud3.debian.tar.xz
+Original-Maintainer: Monty Taylor <mordred@inaugust.com>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCAAGBQJV0o32AAoJEBW5s+4NzfgGZ2UP/0YAZPyib1s8kXplCCaPs7/Z
+GT/m7vAb7c+qO+3TrftYntgO7Q3KZuFLtt85CaQtnmDLIW/FRrcq2X0GDU5J+Ilm
+fPpLMueThaD854Lc9FMhr6MpYSh2JCSmC/3KtWrvI5uhTGj5k2yoVR0dvN4YF/Ui
+2MoavNGy8o4dMbUJl5nqsddIDm0VgV5qkEd+gemdsvdllHbo6G0Zn/E8lvW6+W5v
+sWr+SP+KLYBgtS5Sb9tnG9YoofilUcIROWMNuZJYQEYVdKIcMt6vcTNEMt8/rC1J
+BNq3VkXD1goZlnteOd2uIcPxQgik4oPxpKzc9B/MzGW3Nh1Eoj689DRhrotQuZmo
+e1X2jmDkx01GBSZa8spvb9MDxIR+Oo72I4MrGju6MqVzi55HbgDJ22xvqCo021LF
+GIPysfqhab+TkyDpZt0ZUM2gK5LzPl8iJ4bUUmWdb/rCwXb4Pou17J792z/Oet0L
+c1Qy/yxvyndSFBWBrbVNVZYaPfwpWY+9i8UXYbZ5MzXFLsj0HL0jhQk9fjC2PDXN
+N/XIOukqmjFTpHoVenMOIsbVaacfD8UpPJQ2fRXCf0rtUPvFjzk3D08cuWGgpAoS
+zMpUBWGWdOdIpbDLECRpWklZEOoNb9Oz5lxKdDkIYFONzRFaayjkReRx7uCSLN55
+wezKx57fxDvQ0AAzAKeJ
+=51g0
+-----END PGP SIGNATURE-----

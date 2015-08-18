@@ -1,0 +1,631 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S -sa -nc -v1:2015.1.1-0ubuntu2 --changes-option=-DDistribution=trusty
+dpkg-buildpackage: source package glance
+dpkg-buildpackage: source version 1:2015.1.1-0ubuntu2~cloud3
+dpkg-buildpackage: source distribution trusty-kilo
+dpkg-buildpackage: source changed by Corey Bryant <corey.bryant@canonical.com>
+ dpkg-source --before-build glance
+dpkg-buildpackage: warning: building a source package without cleaning up as you asked; it might contain undesired files
+ dpkg-source -b glance
+dpkg-source: warning: Version number suggests Ubuntu changes, but there is no XSBC-Original-Maintainer field
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building glance using existing ./glance_2015.1.1.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file ChangeLog, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file pylintrc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .testr.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file openstack-common.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file AUTHORS, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file babel.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .coveragerc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tox.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file LICENSE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file HACKING.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file run_tests.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file CONTRIBUTING.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test-requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file MANIFEST.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .mailmap, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/search-policy.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-search.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-registry.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-search-paste.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-registry-paste.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-swift.conf.sample, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-manage.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/schema-image.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/policy.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/property-protections-policies.conf.sample, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/property-protections-roles.conf.sample, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-cache.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-scrubber.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-api-paste.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/glance-api.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory etc/metadefs
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-watchdog.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-hypervisor.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-trust.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-randomgen.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-guest-shutdown.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/software-runtimes.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-libvirt-image.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-host-capabilities.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/glance-common-image-props.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-instance-data.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-vmware.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-vmware-flavor.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-quota.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-aggr-iops-filter.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/software-databases.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/software-webservers.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-aggr-num-instances.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-vmware-quota-flavor.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-xenapi.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/operating-system.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-vcputopology.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-libvirt.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/metadefs/compute-aggr-disk-filter.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory etc/oslo-config-generator
+dpkg-source: warning: ignoring deletion of file etc/oslo-config-generator/glance-registry.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/oslo-config-generator/glance-manage.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/oslo-config-generator/glance-cache.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/oslo-config-generator/glance-scrubber.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file etc/oslo-config-generator/glance-api.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance
+dpkg-source: warning: ignoring deletion of file glance/listener.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/gateway.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/opts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/notifier.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/context.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/service.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/scrubber.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/i18n.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/location.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/version.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/cmd
+dpkg-source: warning: ignoring deletion of file glance/cmd/cache_prefetcher.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/agent_notification.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/index.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/cache_pruner.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/search.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/control.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/replicator.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/registry.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/scrubber.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/cache_cleaner.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/cache_manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/cmd/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/openstack
+dpkg-source: warning: ignoring deletion of file glance/openstack/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/openstack/common
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/loopingcall.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/systemd.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/threadgroup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/eventlet_backdoor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/_i18n.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/local.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/service.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/fileutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/openstack/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib
+dpkg-source: warning: ignoring deletion of file glance/contrib/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib/plugins
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib/plugins/artifacts_sample
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/artifacts_sample/setup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/artifacts_sample/setup.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/artifacts_sample/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/artifacts_sample/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib/plugins/artifacts_sample/v2
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/artifacts_sample/v2/artifact.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/artifacts_sample/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib/plugins/artifacts_sample/v1
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/artifacts_sample/v1/artifact.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/artifacts_sample/v1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib/plugins/image_artifact
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/setup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/setup.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/version_selector.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib/plugins/image_artifact/v1_1
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/v1_1/image.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/v1_1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib/plugins/image_artifact/v2
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/v2/image.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/contrib/plugins/image_artifact/v1
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/v1/image.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/contrib/plugins/image_artifact/v1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/artifacts
+dpkg-source: warning: ignoring deletion of file glance/artifacts/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/api
+dpkg-source: warning: ignoring deletion of file glance/api/common.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/cached_images.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/authorization.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/policy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/property_protections.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/versions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/api/v2
+dpkg-source: warning: ignoring deletion of file glance/api/v2/metadef_properties.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/images.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/image_data.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/router.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/tasks.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/metadef_objects.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/schemas.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/image_tags.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/image_actions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/metadef_resource_types.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/image_members.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/metadef_namespaces.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/metadef_tags.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/api/v2/model
+dpkg-source: warning: ignoring deletion of file glance/api/v2/model/metadef_namespace.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/model/metadef_resource_type.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/model/metadef_object.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/model/metadef_property_type.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/model/metadef_tag.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/model/metadef_property_item_type.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v2/model/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/api/middleware
+dpkg-source: warning: ignoring deletion of file glance/api/middleware/gzip.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/middleware/cache.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/middleware/version_negotiation.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/middleware/context.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/middleware/cache_manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/middleware/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/api/v1
+dpkg-source: warning: ignoring deletion of file glance/api/v1/images.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v1/router.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v1/filters.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v1/upload_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v1/controller.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/api/v1/members.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/registry
+dpkg-source: warning: ignoring deletion of file glance/registry/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/registry/api
+dpkg-source: warning: ignoring deletion of file glance/registry/api/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/registry/api/v2
+dpkg-source: warning: ignoring deletion of file glance/registry/api/v2/rpc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/registry/api/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/registry/api/v1
+dpkg-source: warning: ignoring deletion of file glance/registry/api/v1/images.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/registry/api/v1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/registry/api/v1/members.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/registry/client
+dpkg-source: warning: ignoring deletion of file glance/registry/client/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/registry/client/v2
+dpkg-source: warning: ignoring deletion of file glance/registry/client/v2/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/registry/client/v2/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/registry/client/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/registry/client/v1
+dpkg-source: warning: ignoring deletion of file glance/registry/client/v1/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/registry/client/v1/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/registry/client/v1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/domain
+dpkg-source: warning: ignoring deletion of file glance/domain/proxy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/domain/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/locale
+dpkg-source: warning: ignoring deletion of file glance/locale/glance-log-critical.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/locale/glance-log-warning.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/locale/glance-log-info.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/locale/glance-log-error.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/locale/glance.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/locale/en_GB
+dpkg-source: warning: ignoring deletion of directory glance/locale/en_GB/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file glance/locale/en_GB/LC_MESSAGES/glance-log-info.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/locale/fr
+dpkg-source: warning: ignoring deletion of directory glance/locale/fr/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file glance/locale/fr/LC_MESSAGES/glance-log-info.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/locale/pt_BR
+dpkg-source: warning: ignoring deletion of directory glance/locale/pt_BR/LC_MESSAGES
+dpkg-source: warning: ignoring deletion of file glance/locale/pt_BR/LC_MESSAGES/glance-log-info.po, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/hacking
+dpkg-source: warning: ignoring deletion of file glance/hacking/checks.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/hacking/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/async
+dpkg-source: warning: ignoring deletion of file glance/async/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/async/taskflow_executor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/async/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/async/flows
+dpkg-source: warning: ignoring deletion of file glance/async/flows/introspect.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/async/flows/convert.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/async/flows/base_import.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/async/flows/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/quota
+dpkg-source: warning: ignoring deletion of file glance/quota/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/common
+dpkg-source: warning: ignoring deletion of file glance/common/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/rpc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/semver_db.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/crypt.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/store_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/exception.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/swift_store_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/wsgi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/wsme_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/jsonpatchvalidator.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/property_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/common/scripts
+dpkg-source: warning: ignoring deletion of file glance/common/scripts/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/scripts/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/common/scripts/image_import
+dpkg-source: warning: ignoring deletion of file glance/common/scripts/image_import/main.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/scripts/image_import/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/common/artifacts
+dpkg-source: warning: ignoring deletion of file glance/common/artifacts/loader.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/artifacts/definitions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/artifacts/declarative.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/artifacts/serialization.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/artifacts/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/common/location_strategy
+dpkg-source: warning: ignoring deletion of file glance/common/location_strategy/store_type.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/location_strategy/location_order.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/common/location_strategy/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/image_cache
+dpkg-source: warning: ignoring deletion of file glance/image_cache/cleaner.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/image_cache/prefetcher.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/image_cache/pruner.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/image_cache/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/image_cache/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/image_cache/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/image_cache/drivers
+dpkg-source: warning: ignoring deletion of file glance/image_cache/drivers/sqlite.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/image_cache/drivers/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/image_cache/drivers/xattr.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/image_cache/drivers/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/db
+dpkg-source: warning: ignoring deletion of file glance/db/metadata.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/migration.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/db/registry
+dpkg-source: warning: ignoring deletion of file glance/db/registry/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/registry/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/db/simple
+dpkg-source: warning: ignoring deletion of file glance/db/simple/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/simple/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/db/sqlalchemy
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/models_metadef.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/artifacts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadata.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/models_artifacts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/db/sqlalchemy/metadef_api
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadef_api/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadef_api/tag.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadef_api/resource_type_association.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadef_api/object.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadef_api/resource_type.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadef_api/namespace.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadef_api/property.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/metadef_api/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/db/sqlalchemy/migrate_repo
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/migrate.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/README, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/db/sqlalchemy/migrate_repo/versions
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/026_add_location_storage_information.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/037_sqlite_upgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/027_checksum_index.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/028_owner_index.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/036_rename_metadef_schema_columns.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/034_add_virtual_size.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/030_add_tasks_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/003_sqlite_upgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/006_sqlite_upgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/035_add_metadef_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/012_id_to_uuid.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/004_add_checksum.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/018_add_image_locations_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/006_mysql_upgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/006_sqlite_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/020_drop_images_table_location.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/014_add_image_tags_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/016_sqlite_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/037_sqlite_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/015_quote_swift_credentials.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/038_add_metadef_tags_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/021_set_engine_mysql_innodb.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/033_add_location_status.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/019_migrate_image_locations.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/039_add_changes_to_satisfy_models_metadef.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/013_add_protected.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/002_add_image_properties_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/006_key_to_name.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/031_remove_duplicated_locations.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/022_image_member_index.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/017_quote_encrypted_swift_credentials.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/011_sqlite_upgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/011_make_mindisk_and_minram_notnull.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/005_size_big_integer.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/009_add_mindisk_and_minram.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/003_add_disk_format.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/007_add_owner.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/041_add_artifact_tables.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/029_location_meta_data_pickle_to_string.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/013_sqlite_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/011_sqlite_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/010_default_update_at.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/001_add_images_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/008_add_image_members_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/040_add_changes_to_satisfy_metadefs_tags.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/032_add_task_info_table.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/006_mysql_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/023_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/037_add_changes_to_satisfy_models.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/003_sqlite_downgrade.sql, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/016_add_status_image_member.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/024_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/025_placeholder.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/db/sqlalchemy/migrate_repo/versions/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/search
+dpkg-source: warning: ignoring deletion of file glance/search/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/search/api
+dpkg-source: warning: ignoring deletion of file glance/search/api/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/search/api/v0_1
+dpkg-source: warning: ignoring deletion of file glance/search/api/v0_1/router.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/search/api/v0_1/search.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/search/api/v0_1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/search/plugins
+dpkg-source: warning: ignoring deletion of file glance/search/plugins/images.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/search/plugins/images_notification_handler.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/search/plugins/metadefs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/search/plugins/metadefs_notification_handler.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/search/plugins/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/search/plugins/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests
+dpkg-source: warning: ignoring deletion of file glance/tests/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/test_hacking.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/stubs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/integration
+dpkg-source: warning: ignoring deletion of file glance/tests/integration/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/integration/legacy_functional
+dpkg-source: warning: ignoring deletion of file glance/tests/integration/legacy_functional/test_v1_api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/integration/legacy_functional/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/integration/legacy_functional/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/integration/v2
+dpkg-source: warning: ignoring deletion of file glance/tests/integration/v2/test_tasks_api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/integration/v2/test_property_quota_violations.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/integration/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/integration/v2/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/etc
+dpkg-source: warning: ignoring deletion of file glance/tests/etc/property-protections.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/etc/glance-swift.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/etc/schema-image.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/etc/policy.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/etc/property-protections-policies.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/var
+dpkg-source: warning: ignoring deletion of file glance/tests/var/certificate.crt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/var/ca.crt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/var/privatekey.key, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/var/ca.key, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/functional
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_client_redirects.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_gzip_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_glance_manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_wsgi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_logging.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_cache_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_reload.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_ssl.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_sqlite.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_bin_glance_cache_manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/store_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_client_exceptions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/test_scrubber.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/functional/v2
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/test_metadef_namespaces.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/registry_data_api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/test_metadef_objects.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/test_images.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/test_metadef_tags.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/test_metadef_properties.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/test_tasks.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/test_schemas.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/test_metadef_resourcetypes.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/functional/db
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/db/base_artifacts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/db/base_metadef.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/db/test_sqlalchemy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/db/test_simple.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/db/test_registry.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/db/test_rpc_endpoint.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/db/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/db/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/functional/v1
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v1/test_copy_to_file.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v1/test_multiprocessing.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v1/test_api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v1/test_misc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/functional/v1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_opts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_db_metadef.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_context_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_search.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_db.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_schema.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_domain_proxy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_cache_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_notifier.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_artifacts_plugin_loader.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_jsonpatchmixin.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_policy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_migrations.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_quota.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_gateway.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_context.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_domain.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_scrubber.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_cached_images.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_artifact_type_definition_framework.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_image_cache.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_glance_replicator.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_store_location.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_misc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_image_cache_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_versions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/fake_rados.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/test_store_image.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/api
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/api/test_property_protections.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/api/test_common.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/api/test_cmd_cache_manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/api/test_cmd.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/api/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/api/middleware
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/api/middleware/test_cache_manage.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/api/middleware/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/async
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/async/test_async.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/async/test_taskflow_executor.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/async/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/async/flows
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/async/flows/test_import.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/async/flows/test_convert.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/async/flows/test_introspect.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/async/flows/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/v2
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_registry_api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_image_data_resource.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_image_tags_resource.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_registry_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_images_resource.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_schemas_resource.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_metadef_resources.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_image_actions_resource.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_tasks_resource.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/test_image_members_resource.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/common
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_wsgi_ipv6.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_wsgi.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_rpc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_semver.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_scripts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_swift_store_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_exception.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_property_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/test_location_strategy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/common/scripts
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/scripts/test_scripts_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/scripts/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/common/scripts/image_import
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/scripts/image_import/test_main.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/common/scripts/image_import/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/v0_1
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v0_1/test_search.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance/tests/unit/v1
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v1/test_upload_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v1/test_registry_api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v1/test_registry_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v1/test_api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance/tests/unit/v1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory glance.egg-info
+dpkg-source: warning: ignoring deletion of file glance.egg-info/not-zip-safe, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance.egg-info/dependency_links.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance.egg-info/top_level.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance.egg-info/requires.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance.egg-info/entry_points.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance.egg-info/SOURCES.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance.egg-info/pbr.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file glance.egg-info/PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory tools
+dpkg-source: warning: ignoring deletion of file tools/install_venv.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/install_venv_common.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/colorizer.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/with_venv.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/migrate_image_owners.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory rally-jobs
+dpkg-source: warning: ignoring deletion of file rally-jobs/glance.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file rally-jobs/README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory rally-jobs/extra
+dpkg-source: warning: ignoring deletion of file rally-jobs/extra/README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file rally-jobs/extra/fake.img, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory rally-jobs/plugins
+dpkg-source: warning: ignoring deletion of file rally-jobs/plugins/README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file rally-jobs/plugins/plugin_sample.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc
+dpkg-source: warning: ignoring deletion of directory doc/source
+dpkg-source: warning: ignoring deletion of file doc/source/glanceapi.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/statuses.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/index.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/property-protections.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/glancemetadefcatalogapi.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/cache.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/glanceclient.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/notifications.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/controllingservers.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/identifiers.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/conf.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/metadefs-concepts.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/formats.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/common-image-properties.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/policies.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/db.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/installing.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/authentication.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/configuring.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/architecture.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/man
+dpkg-source: warning: ignoring deletion of file doc/source/man/glanceapi.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/openstack_options.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glancemanage.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/footer.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glancecachepruner.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glancecachemanage.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glancereplicator.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glancecachecleaner.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/general_options.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glancecontrol.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glanceregistry.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glancecacheprefetcher.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/man/glancescrubber.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/images_src
+dpkg-source: warning: ignoring deletion of file doc/source/images_src/image_status_transition.dot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/images_src/image_status_transition.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/images_src/architecture.graphml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/images
+dpkg-source: warning: ignoring deletion of file doc/source/images/architecture.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/images/image_status_transition.png, use --include-removal to override
+dpkg-source: info: building glance in glance_2015.1.1-0ubuntu2~cloud3.debian.tar.xz
+dpkg-source: info: building glance in glance_2015.1.1-0ubuntu2~cloud3.dsc
+ dpkg-genchanges -S -sa -DDistribution=trusty -v1:2015.1.1-0ubuntu2 >../glance_2015.1.1-0ubuntu2~cloud3_source.changes
+dpkg-genchanges: warning: the current version (1:2015.1.1-0ubuntu2~cloud3) is earlier than the previous one (1:2015.1.1-0ubuntu2)
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build glance
+dpkg-buildpackage: full upload (original source is included)
