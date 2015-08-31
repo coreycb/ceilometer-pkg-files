@@ -1,6 +1,0 @@
-#!/usr/bin/python
-#-------------------------
-# Testing client utilities
-#-------------------------
-import ceilometer
-print "Imported ceilometer module OK"

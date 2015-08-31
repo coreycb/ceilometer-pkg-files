@@ -1,2 +1,0 @@
-etc/ceilometer/rootwrap.d/ipmi.filters
-usr/bin/ceilometer-agent-ipmi

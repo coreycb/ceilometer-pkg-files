@@ -1,2 +1,0 @@
-Tests: test-daemons test-python-ceilometer
-Depends: python-ceilometer, ceilometer-common, ceilometer-collector, ceilometer-api, ceilometer-agent-compute, ceilometer-agent-central, ceilometer-agent-ipmi, ceilometer-agent-notification

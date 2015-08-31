@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Fri, 07 Aug 2015 11:20:52 -0300
+Source: python-keystoneclient
+Binary: python-keystoneclient
+Architecture: source
+Version: 1:0.10.1-0ubuntu1.2~cloud0
+Distribution: trusty
+Urgency: medium
+Maintainer: Chuck Short <zulcss@ubuntu.com>
+Changed-By: Jorge Niedbalski <jorge.niedbalski@canonical.com>
+Description:
+ python-keystoneclient - Client library for OpenStack Identity API
+Launchpad-Bugs-Fixed: 1368545
+Changes:
+ python-keystoneclient (1:0.10.1-0ubuntu1.2~cloud0) trusty-juno; urgency=medium
+ .
+   * debian/patches/fix-1368545.patch: Changing the value type of
+     http_connect_timeout to IntOpt. (LP: #1368545)
+Checksums-Sha1:
+ 33a2b73c171908d3e6d968ebe20da2f5c2dfef6d 1561 python-keystoneclient_0.10.1-0ubuntu1.2~cloud0.dsc
+ 8649818439739d42334881973c3aee724bd52625 321149 python-keystoneclient_0.10.1.orig.tar.gz
+ db4895f6113b57ef31e1f47bbdf92b771e475917 6952 python-keystoneclient_0.10.1-0ubuntu1.2~cloud0.debian.tar.xz
+Checksums-Sha256:
+ de38764bda8264edae6ab1c3a99aed53822ef6e9f1118486e26166e57915c674 1561 python-keystoneclient_0.10.1-0ubuntu1.2~cloud0.dsc
+ 259ce783dadb69cb48bfb02ed26c7d1ce3d5ad504e9e53c326e958a1e4ddadde 321149 python-keystoneclient_0.10.1.orig.tar.gz
+ edcbc16588122ecb22d269831a44a567febb6702859985e88b7cef1e6ef499b6 6952 python-keystoneclient_0.10.1-0ubuntu1.2~cloud0.debian.tar.xz
+Files:
+ 61b84540b14f2d966842ab10d7413223 1561 python extra python-keystoneclient_0.10.1-0ubuntu1.2~cloud0.dsc
+ 5757bc752155000a625c4adea8e1b132 321149 python extra python-keystoneclient_0.10.1.orig.tar.gz
+ 5140085597719247889760bb9cb3fbfe 6952 python extra python-keystoneclient_0.10.1-0ubuntu1.2~cloud0.debian.tar.xz

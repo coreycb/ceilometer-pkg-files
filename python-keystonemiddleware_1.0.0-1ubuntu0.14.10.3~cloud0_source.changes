@@ -1,0 +1,53 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 07 Aug 2015 11:35:49 -0300
+Source: python-keystonemiddleware
+Binary: python-keystonemiddleware python-keystonemiddleware-doc
+Architecture: source
+Version: 1.0.0-1ubuntu0.14.10.3~cloud0
+Distribution: trusty
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Jorge Niedbalski <jorge.niedbalski@canonical.com>
+Description:
+ python-keystonemiddleware - Middleware for OpenStack Identity (Keystone) - Python 2.x
+ python-keystonemiddleware-doc - Middleware for OpenStack Identity (Keystone) - doc
+Launchpad-Bugs-Fixed: 1368545
+Changes:
+ python-keystonemiddleware (1.0.0-1ubuntu0.14.10.3~cloud0) trusty-juno; urgency=medium
+ .
+   * debian/patches/fix-1368545.patch: Changing the value type of
+     http_connect_timeout to IntOpt. (LP: #1368545).
+Checksums-Sha1:
+ 1b079916a2dcb23bd974ff8dfa829ecfbf759492 3097 python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0.dsc
+ 07459784a98db94b7a9eae6131e1adae3a327463 100816 python-keystonemiddleware_1.0.0.orig.tar.xz
+ 1b18fbca5083babb5fb675403a027a45c6a8d772 6052 python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0.debian.tar.xz
+Checksums-Sha256:
+ 178b3ba033ba1d6e5b29ddbfcb911171246e66a6ac6b717078e13cb3c85d7c09 3097 python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0.dsc
+ 567a08eb6bf4d30e0d536686219bab4fc970720b89e462cce8057d8ba5b8ed0c 100816 python-keystonemiddleware_1.0.0.orig.tar.xz
+ 3ad3039f56f97be4775ca0f3f839b2109cf9ce6b0649711e04e84a9853902357 6052 python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0.debian.tar.xz
+Files:
+ 5374fab1b8a8faacc7b62e7f00aa4ccd 3097 python optional python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0.dsc
+ 035e8e9a78cfc39cff00718ed1122b2f 100816 python optional python-keystonemiddleware_1.0.0.orig.tar.xz
+ 5fa4b36731e222e1bf3fee4642dc506a 6052 python optional python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0.debian.tar.xz
+Original-Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCAAGBQJV5FozAAoJEBW5s+4NzfgGFI8P/0ycLfyX+EFdnazqxWN7Wr41
+e/Hd71XSL17xz+jwbi0uH+N+W83L+oVZFKil5JaxISsU+UK3IIuBCN7wfk3exEoJ
+BZxNS/Rge1wmgmN0SIKm+wuPmKEYiBsnDO++Bz0/kaRzp2s0I84JmZptMv+K5X6g
+8neZIjuCq8OPsmjYRo2pgdc6SUlSd0eN8Q+er2FBflsnq0N6NJMofW+X0I9lcbRT
+VsFHemfb0aLmpc04Nx14wC6uLJLDekw6BuYIxxsEDrfArc2cEZ+tvFhUHyY3rF8e
+xH4Ny0jmQ6gHm3TMgIe2wHOPScFr6bhjVP8FWNes7ejlbX4rhUd0vAdomnfmN7Ws
+Dli5R4cpftu9dgTfnwt885fllWtkqjLdYr+aIMUsjQSVQBTNgM/dXxMMjFUlYmw2
+bOYRshvv4owVs38HtQZPvJ8YMKUGa7/A5ZY8nVkTdy1zACLygnUoXEi7AX3AM55Z
+ySsAS0vyqnFEtznJd5N/GzqNtvo9ltzQvWYAhe4yt/yIhzEWENiXf3Kp+mu0duM7
+eCvPw3eTwRpBx3+ZCiNLxD4RiKcdf1xKiBCnw1IrEJNvJdo225pPDdqF4L8pwoYU
+OnxrO97KtRhyd+cWktA6c9tik0NPIwuf2M+O2DjC9XygFc8xsNYSlBKMOuGH6CBo
+PcK6p+EVQBTzulKMSriK
+=WYzV
+-----END PGP SIGNATURE-----

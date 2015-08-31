@@ -1,0 +1,41 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -v1.0.0-1ubuntu0.14.10.2~cloud0 -S -sa --changes-option=-DDistribution=trusty
+dpkg-buildpackage: source package python-keystonemiddleware
+dpkg-buildpackage: source version 1.0.0-1ubuntu0.14.10.3~cloud0
+dpkg-buildpackage: source distribution trusty-juno
+dpkg-buildpackage: source changed by Jorge Niedbalski <jorge.niedbalski@canonical.com>
+ dpkg-source --before-build python-keystonemiddleware
+dpkg-source: info: using options from python-keystonemiddleware/debian/source/options: --extend-diff-ignore=^[^/]*[.]egg-info/
+ fakeroot debian/rules clean
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+dh clean --buildsystem=python_distutils --with python2,sphinxdoc
+   dh_testdir -O--buildsystem=python_distutils
+   dh_auto_clean -O--buildsystem=python_distutils
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+running clean
+'build/lib.linux-x86_64-2.7' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+   debian/rules override_dh_clean
+make[1]: Entering directory '/tmp/middleware/juno/python-keystonemiddleware'
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+dh_clean -O--buildsystem=python_distutils
+rm -rf build
+make[1]: Leaving directory '/tmp/middleware/juno/python-keystonemiddleware'
+ dpkg-source -b python-keystonemiddleware
+dpkg-source: info: using options from python-keystonemiddleware/debian/source/options: --extend-diff-ignore=^[^/]*[.]egg-info/
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building python-keystonemiddleware using existing ./python-keystonemiddleware_1.0.0.orig.tar.xz
+dpkg-source: info: building python-keystonemiddleware in python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0.debian.tar.xz
+dpkg-source: info: building python-keystonemiddleware in python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0.dsc
+ dpkg-genchanges -S -sa -DDistribution=trusty -v1.0.0-1ubuntu0.14.10.2~cloud0 >../python-keystonemiddleware_1.0.0-1ubuntu0.14.10.3~cloud0_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build python-keystonemiddleware
+dpkg-source: info: using options from python-keystonemiddleware/debian/source/options: --extend-diff-ignore=^[^/]*[.]egg-info/
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: python-keystonemiddleware source: debian-revision-not-well-formed 1.0.0-1ubuntu0.14.10.3~cloud0
+W: python-keystonemiddleware source: out-of-date-standards-version 3.9.5 (current is 3.9.6)
+Finished running lintian.

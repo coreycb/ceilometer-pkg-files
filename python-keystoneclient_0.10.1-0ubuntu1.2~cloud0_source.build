@@ -1,0 +1,335 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -v1:0.10.1-0ubuntu1.1~cloud0 -S -sa --changes-option=-DDistribution=trusty
+dpkg-buildpackage: source package python-keystoneclient
+dpkg-buildpackage: source version 1:0.10.1-0ubuntu1.2~cloud0
+dpkg-buildpackage: source distribution trusty-juno
+dpkg-buildpackage: source changed by Jorge Niedbalski <jorge.niedbalski@canonical.com>
+ dpkg-source --before-build python-keystoneclient
+ fakeroot debian/rules clean
+dh clean  --with python2
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b python-keystoneclient
+dpkg-source: warning: Version number suggests Ubuntu changes, but there is no XSBC-Original-Maintainer field
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building python-keystoneclient using existing ./python-keystoneclient_0.10.1.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file run_tests.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file test-requirements.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file README.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .mailmap, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file HACKING.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file CONTRIBUTING.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file MANIFEST.in, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tox.ini, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file babel.cfg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file ChangeLog, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file AUTHORS, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file openstack-common.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file setup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file LICENSE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .coveragerc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file .testr.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory examples
+dpkg-source: warning: ignoring deletion of directory examples/pki
+dpkg-source: warning: ignoring deletion of file examples/pki/gen_pki.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/gen_cmsz.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/run_all.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory examples/pki/private
+dpkg-source: warning: ignoring deletion of file examples/pki/private/signing_key.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/private/cakey.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/private/ssl_key.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory examples/pki/cms
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_revoked.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_scoped.pkiz, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_scoped_expired.pkiz, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_v3_token_scoped.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_v3_token_revoked.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_unscoped.pkiz, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_scoped.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_unscoped.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_scoped_expired.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/revocation_list.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/revocation_list.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_scoped.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_revoked.pkiz, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_v3_token_revoked.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_unscoped.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_scoped_expired.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_v3_token_scoped.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_v3_token_revoked.pkiz, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/revocation_list.der, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/revocation_list.pkiz, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_token_revoked.json, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/cms/auth_v3_token_scoped.pkiz, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory examples/pki/certs
+dpkg-source: warning: ignoring deletion of file examples/pki/certs/signing_cert.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/certs/cacert.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/certs/middleware.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file examples/pki/certs/ssl_cert.pem, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/_discover.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/session.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/exceptions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/baseclient.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/service_catalog.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/shell.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/httpclient.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/access.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/discover.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/adapter.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/locale
+dpkg-source: warning: ignoring deletion of file keystoneclient/locale/keystoneclient.pot, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/tests
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/fakes.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_discovery.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_http.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_memcache_crypt.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_shell.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_keyring.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_ec2utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_session.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_auth_token_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_https.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_cms.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/client_fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/test_s3_token_middleware.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/tests/v2_0
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/fakes.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_discovery.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_tokens.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_shell.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_users.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_service_catalog.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_ec2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_roles.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_tenants.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_services.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/client_fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_access.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_endpoints.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/test_extensions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v2_0/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/tests/auth
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/auth/test_identity_common.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/auth/test_cli.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/auth/test_token_endpoint.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/auth/test_identity_v3.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/auth/test_identity_v2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/auth/test_conf.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/auth/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/auth/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/tests/v3
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_discover.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_endpoint_filter.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_users.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_role_assignments.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_service_catalog.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_credentials.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_policies.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_groups.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_federation.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_roles.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_auth_saml2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_services.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_regions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/client_fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_domains.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_access.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_projects.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_oauth1.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_endpoints.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/saml2_fixtures.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/v3/test_trusts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/tests/generic
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/generic/test_shell.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/generic/test_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/generic/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/tests/apiclient
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/apiclient/test_exceptions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/tests/apiclient/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/v2_0
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/extensions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/tenants.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/endpoints.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/users.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/shell.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/roles.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/tokens.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/ec2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v2_0/services.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/contrib
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/contrib/auth
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/auth/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/contrib/auth/v3
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/auth/v3/saml2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/auth/v3/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/contrib/bootstrap
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/bootstrap/shell.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/bootstrap/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/contrib/revoke
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/revoke/model.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/revoke/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/contrib/ec2
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/ec2/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/contrib/ec2/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/openstack
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/openstack/common
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/strutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/uuidutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/importutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/jsonutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/memorycache.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/timeutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/gettextutils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/openstack/common/apiclient
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/apiclient/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/apiclient/exceptions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/apiclient/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/apiclient/fake_client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/apiclient/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/apiclient/auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/openstack/common/fixture
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/fixture/config.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/openstack/common/fixture/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/auth
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/token_endpoint.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/conf.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/cli.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/auth/identity
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/identity/base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/identity/v2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/identity/v3.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/auth/identity/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/v3
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/policies.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/groups.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/domains.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/credentials.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/projects.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/endpoints.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/role_assignments.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/users.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/regions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/roles.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/services.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/v3/contrib
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/endpoint_filter.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/trusts.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/v3/contrib/federation
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/federation/protocols.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/federation/mappings.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/federation/identity_providers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/federation/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/federation/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/v3/contrib/oauth1
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/oauth1/access_tokens.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/oauth1/core.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/oauth1/consumers.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/oauth1/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/oauth1/auth.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/oauth1/request_tokens.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/v3/contrib/oauth1/utils.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/generic
+dpkg-source: warning: ignoring deletion of file keystoneclient/generic/client.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/generic/shell.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/generic/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/apiclient
+dpkg-source: warning: ignoring deletion of file keystoneclient/apiclient/exceptions.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/apiclient/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/common
+dpkg-source: warning: ignoring deletion of file keystoneclient/common/cms.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/common/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/middleware/memcache_crypt.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/middleware/auth_token.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/middleware/s3_token.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/middleware/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory keystoneclient/fixture
+dpkg-source: warning: ignoring deletion of file keystoneclient/fixture/discovery.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/fixture/v2.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/fixture/v3.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/fixture/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file keystoneclient/fixture/exception.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory tools
+dpkg-source: warning: ignoring deletion of file tools/with_venv.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/keystone.bash_completion, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/debug_helper.sh, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/install_venv_common.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file tools/install_venv.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory python_keystoneclient.egg-info
+dpkg-source: warning: ignoring deletion of file python_keystoneclient.egg-info/PKG-INFO, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file python_keystoneclient.egg-info/entry_points.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file python_keystoneclient.egg-info/not-zip-safe, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file python_keystoneclient.egg-info/SOURCES.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file python_keystoneclient.egg-info/requires.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file python_keystoneclient.egg-info/top_level.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file python_keystoneclient.egg-info/dependency_links.txt, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc
+dpkg-source: warning: ignoring deletion of file doc/Makefile, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source
+dpkg-source: warning: ignoring deletion of file doc/source/index.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/using-api-v2.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/middlewarearchitecture.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/authentication-plugins.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/conf.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/using-sessions.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/using-api-v3.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/man
+dpkg-source: warning: ignoring deletion of file doc/source/man/keystone.rst, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/static
+dpkg-source: warning: ignoring deletion of file doc/source/static/header_bg.jpg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/static/tweaks.css, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/static/openstack_logo.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/static/jquery.tweet.js, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/static/nature.css, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/static/basic.css, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/static/default.css, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/static/header-line.gif, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/_templates
+dpkg-source: warning: ignoring deletion of file doc/source/_templates/.placeholder, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/images
+dpkg-source: warning: ignoring deletion of file doc/source/images/graphs_authComp.svg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/images/graphs_authCompDelegate.svg, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/source/_theme
+dpkg-source: warning: ignoring deletion of file doc/source/_theme/theme.conf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/source/_theme/layout.html, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory doc/ext
+dpkg-source: warning: ignoring deletion of file doc/ext/apidoc.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file doc/ext/__init__.py, use --include-removal to override
+dpkg-source: info: building python-keystoneclient in python-keystoneclient_0.10.1-0ubuntu1.2~cloud0.debian.tar.xz
+dpkg-source: info: building python-keystoneclient in python-keystoneclient_0.10.1-0ubuntu1.2~cloud0.dsc
+ dpkg-genchanges -S -sa -DDistribution=trusty -v1:0.10.1-0ubuntu1.1~cloud0 >../python-keystoneclient_0.10.1-0ubuntu1.2~cloud0_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build python-keystoneclient
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+W: python-keystoneclient source: invalid-short-name-in-dep5-copyright gpl+3 (paragraph at line 31)
+W: python-keystoneclient source: ancient-standards-version 3.9.4 (current is 3.9.6)
+Finished running lintian.
