@@ -1,0 +1,53 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 03 Sep 2015 09:10:46 -0400
+Source: openstack-trove
+Binary: python-trove trove-common trove-api trove-guestagent trove-taskmanager trove-conductor
+Architecture: source
+Version: 1:4.0.0~b2-0ubuntu2
+Distribution: wily
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Corey Bryant <corey.bryant@canonical.com>
+Description:
+ python-trove - Database as a Service for OpenStack - Python lib
+ trove-api  - Database as a Service for OpenStack - API server
+ trove-common - Database as a Service for OpenStack - common files
+ trove-conductor - Database as a Service for OpenStack - conductor
+ trove-guestagent - Database as a Service for OpenStack - guest agent
+ trove-taskmanager - Database as a Service for OpenStack - taskmanager
+Changes:
+ openstack-trove (1:4.0.0~b2-0ubuntu2) wily; urgency=medium
+ .
+   * d/control: Add python-pymysql to (build-)depends.
+   * d/p/skip-tests.patch: Skip tests that require mysql-server.
+Checksums-Sha1:
+ cfa81295c8f7f69c02abd4493a73b20a9eb3ee7b 4133 openstack-trove_4.0.0~b2-0ubuntu2.dsc
+ 00e32727c040fca0e82cbc3913129a4c84518b77 9856 openstack-trove_4.0.0~b2-0ubuntu2.debian.tar.xz
+Checksums-Sha256:
+ 63fe503ca603ccbff16043a80cb04d2f852e4d36ac7fd13658e85d5ef54d5f38 4133 openstack-trove_4.0.0~b2-0ubuntu2.dsc
+ ecb4dc7f1ef7b409b62f77f36ef1cfdbf167c9c3c8c9214b6d21bfb206496420 9856 openstack-trove_4.0.0~b2-0ubuntu2.debian.tar.xz
+Files:
+ 9bd82fb4ab041b073799a350e15fc6f0 4133 net extra openstack-trove_4.0.0~b2-0ubuntu2.dsc
+ 423db937f580ff0b4a36b133da97dcfd 9856 net extra openstack-trove_4.0.0~b2-0ubuntu2.debian.tar.xz
+Original-Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCAAGBQJV6J+iAAoJEBW5s+4NzfgGdPwQAMGnqZdY420sO3daRSGugdGP
+VriDx6m9xoDI0Y0uQfBnzy/COs9ExVn30UMUVnpOIKq+TBRWN7fccCFi+/RfcsZ/
+CXZ8XWjavR0djKkl/0o97jWvhFgDHzod+tdaMPkKp6aX2YQUVqEWHb5SJuhLqevv
+8hqhdXXkkX7hOEp/+on/cFKSUDZLsjFG40xileD1MhnTiuEB3/IJMdWy/rWUcCsB
+IMwRnxzGfWVJP+tQKT9KFi7pgKzS41WB4JN/upBGrR4vBcVuCypShxurJq4ZHvKC
+qRFwx10J48U66VvswHX2RoEOAL+ImeWwHsMAD+wAUokzYUDj3ccGPOiDWvW3RnF6
+a/oFVuXhvRGZL0spOCv4ID0p7RsIgl4Mg+uxBXPVGVVTFiK0FZBtIN5QbY5UqsdS
+7l3oeiuRhr2oDEzaTZs+Wb4kpxmubmc47CafNlTgcjcT/hVHimvniL4hFZAwOkjP
+Zt+jYWokNZFitwiwUODJEB0E2GXgfkc4/Cr7hXvlektcatoLLSXkxP/cfD6MU++/
+8nQhdNn1Z+ibIqjmOIrnDSknsu7DGBF9B924R/MlEXSt3z9xzFcgxEAaJb6nOxQY
+oWGbjK5BScXuJ01oKIZ/qtt1Juel752H4Iaso4a9hrGAw9ygzDsVAPNAWQQzKRtM
+NDpZ0UntyFRi9rcEcNbT
+=ZRVm
+-----END PGP SIGNATURE-----

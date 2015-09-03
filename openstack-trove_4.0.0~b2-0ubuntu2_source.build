@@ -1,0 +1,64 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -i -I -S
+dpkg-buildpackage: source package openstack-trove
+dpkg-buildpackage: source version 1:4.0.0~b2-0ubuntu2
+dpkg-buildpackage: source distribution wily
+dpkg-buildpackage: source changed by Corey Bryant <corey.bryant@canonical.com>
+ dpkg-source -i -I --before-build openstack-trove-4.0.0~b2
+dpkg-source: info: applying skip-tests.patch
+dpkg-source: info: applying fix-base-unit-test-class.patch
+dpkg-source: info: applying patch-default-config-file.patch
+ fakeroot debian/rules clean
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+debian/rules:14: warning: overriding recipe for target 'get-orig-source'
+/usr/share/openstack-pkg-tools/pkgos.make:75: warning: ignoring old recipe for target 'get-orig-source'
+dh clean --with python2,systemd
+   dh_testdir
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/corey/pkg/liberty/build-area/openstack-trove-4.0.0~b2'
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+debian/rules:14: warning: overriding recipe for target 'get-orig-source'
+/usr/share/openstack-pkg-tools/pkgos.make:75: warning: ignoring old recipe for target 'get-orig-source'
+dh_auto_clean
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py:2512: PEP440Warning: 'ubuntu-dev-tools (0.155-ubuntu2)' is being parsed as a legacy, non PEP 440, version. You may find odd behavior and sort order. In particular it will be sorted as less than 0.0. It is recommend to migrate to PEP 440 compatible versions.
+  PEP440Warning,
+/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py:2512: PEP440Warning: 'python-apt (0.9.3.11build1)' is being parsed as a legacy, non PEP 440, version. You may find odd behavior and sort order. In particular it will be sorted as less than 0.0. It is recommend to migrate to PEP 440 compatible versions.
+  PEP440Warning,
+/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py:2512: PEP440Warning: 'reportbug (6.6.3ubuntu1)' is being parsed as a legacy, non PEP 440, version. You may find odd behavior and sort order. In particular it will be sorted as less than 0.0. It is recommend to migrate to PEP 440 compatible versions.
+  PEP440Warning,
+/usr/lib/python2.7/dist-packages/pkg_resources/__init__.py:2512: PEP440Warning: 'pbr (0.5.2.5.g5b3e942)' is being parsed as a legacy, non PEP 440, version. You may find odd behavior and sort order. In particular it will be sorted as less than 0.0. It is recommend to migrate to PEP 440 compatible versions.
+  PEP440Warning,
+
+Installed /home/corey/pkg/liberty/build-area/openstack-trove-4.0.0~b2/.eggs/pbr-1.6.0-py2.7.egg
+running clean
+'build/lib.linux-x86_64-2.7' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+rm -f debian/*.init debian/*.service debian/*.upstart
+rm -rf .eggs
+make[1]: Leaving directory '/home/corey/pkg/liberty/build-area/openstack-trove-4.0.0~b2'
+   dh_clean
+ dpkg-source -i -I -b openstack-trove-4.0.0~b2
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building openstack-trove using existing ./openstack-trove_4.0.0~b2.orig.tar.gz
+dpkg-source: info: building openstack-trove in openstack-trove_4.0.0~b2-0ubuntu2.debian.tar.xz
+dpkg-source: info: building openstack-trove in openstack-trove_4.0.0~b2-0ubuntu2.dsc
+ dpkg-genchanges -S >../openstack-trove_4.0.0~b2-0ubuntu2_source.changes
+dpkg-genchanges: not including original source code in upload
+ dpkg-source -i -I --after-build openstack-trove-4.0.0~b2
+dpkg-source: info: unapplying patch-default-config-file.patch
+dpkg-source: info: unapplying fix-base-unit-test-class.patch
+dpkg-source: info: unapplying skip-tests.patch
+dpkg-buildpackage: binary and diff upload (original source NOT included)
+Now running lintian...
+E: openstack-trove changes: bad-distribution-in-changes-file wily
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile openstack-trove_4.0.0~b2-0ubuntu2.dsc Corey Bryant <corey.bryant@canonical.com>
+
+ signfile openstack-trove_4.0.0~b2-0ubuntu2_source.changes Corey Bryant <corey.bryant@canonical.com>
+
+Successfully signed dsc and changes files
